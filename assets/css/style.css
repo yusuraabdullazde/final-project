@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 70px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 15px 0px;
+  border-bottom: 1px solid gray;
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav .img {
+  width: 200px;
+  border-right: 1px solid black;
+  padding: 0 60px 0 0;
+  cursor: pointer;
+}
+nav .nav .img:hover img {
+  scale: 1.1;
+  overflow: hidden;
+  transition: all 1s;
+}
+nav .nav .list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+nav .nav .list li a {
+  text-decoration: none;
+  color: rgba(14, 14, 37, 0.4117647059);
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+nav .nav .list li a i {
+  color: red;
+}
+nav .nav .list li a:hover {
+  color: black;
+  transition: all 1s ease;
+}
+nav .nav .list li a:hover i {
+  color: black;
+}
+nav .nav .element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav .element a {
+  text-decoration: none;
+}
+nav .nav .element .icon-write {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .nav .element .icon-write a {
+  font-weight: 600;
+}
+nav .nav .element .icon-write i {
+  color: #4851d5;
+  font-size: 18px;
+}
+nav .nav .element .button {
+  padding: 10px 18px;
+  color: white;
+  background-color: #4851d5;
+  border-radius: 25px;
+}
+nav .nav .element .button:hover {
+  transition: all 1s ease;
+  overflow: hidden;
+  scale: 1.1;
+}
+
+#banner {
+  padding: 40px 0px;
+  background-color: #F3F3FF;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+#banner .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner .banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+#banner .banner .banner-text h1 {
+  font-size: 50px;
+}
+#banner .banner .banner-text div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#banner .banner .banner-text div .button2, #banner .banner .banner-text div .button3 {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 25px;
+}
+#banner .banner .banner-text div .button2:hover, #banner .banner .banner-text div .button3:hover {
+  transition: all 1s ease;
+  overflow: hidden;
+  scale: 1.1;
+}
+#banner .banner .banner-text div .button2 {
+  background-color: #4851d5;
+}
+#banner .banner .banner-text div .button3 {
+  background-color: white;
+  color: gray;
+}
+#banner .banner .banner-img {
+  width: 55%;
+}
+#banner .banner .banner-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#banner .banner .banner-number .one {
+  width: 200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+#banner .banner .banner-number .one p {
+  font-size: 30px;
+}
+
+#blok {
+  padding: 50px 0px;
+  background-color: #4851d5;
+  color: white;
+}
+#blok .blok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+#blok .blok .two {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+#blok .blok .two i {
+  background-color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: #4851d5;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blok .blok .write p {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */

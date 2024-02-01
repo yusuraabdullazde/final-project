@@ -1,0 +1,36 @@
+#blok {
+    padding: 50px 0px;
+    background-color: $color1;
+    color: white;
+
+    .blok {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        .two {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+
+            i {
+                background-color: white;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                color: $color1;
+                font-size: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .write{
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+}
