@@ -196,4 +196,193 @@ nav .nav .element .button:hover {
 }
 #blok .blok .write p {
   font-size: 25px;
+}
+
+#about {
+  padding: 80px 0px;
+}
+#about .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+#about .about .about-img,
+#about .about .about-video {
+  width: 300px;
+  height: 500px;
+}
+#about .about .about-img {
+  background-image: url("../image/portrait-of-young-woman-doctor-at-hospital-corrido-SGSBYGP.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 30px;
+  padding: 20px 0px;
+}
+#about .about .about-img div {
+  padding: 10px 20px;
+  background-color: white;
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+}
+#about .about .about-video {
+  background-image: url("../image/doctors-discussing-something-at-hospital-corridor-5HAKCZZ.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+#about .about .about-video i {
+  font-size: 70px;
+  cursor: pointer;
+  color: white;
+}
+#about .about .about-video i:hover {
+  color: #4851d5;
+  transition: all 1s ease;
+}
+#about .about .about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#about .about .about-text h4 {
+  font-size: 15px;
+  color: #4851d5;
+}
+#about .about .about-text h2 {
+  font-size: 45px;
+}
+#about .about .about-text .txt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+#about .about .about-text .txt div {
+  width: 270px;
+}
+#about .about a {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 18px;
+  color: white;
+  background-color: #4851d5;
+  border-radius: 25px;
+}
+#about .about a:hover {
+  transition: all 1s ease;
+  overflow: hidden;
+  scale: 1.1;
+}
+
+#help {
+  padding: 50px 0px;
+}
+#help .help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#help .help .help-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#help .help .help-text h4 {
+  font-size: 15px;
+  color: #4851d5;
+}
+#help .help .help-text h2 {
+  font-size: 45px;
+}
+#help .help .help-text .txt2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#help .help .help-text .txt2 > div {
+  display: flex;
+  gap: 18px;
+}
+#help .help .help-text .txt2 > div h4 {
+  cursor: pointer;
+  font-size: 20px;
+}
+#help .help .help-text .txt2 > div i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #4851d5;
+  color: white;
+  cursor: pointer;
+}
+#help .help .help-text .txt2 > div > div {
+  display: flex;
+  flex-direction: column;
+}
+#help .help .help-img {
+  width: 50%;
+}
+#help .help .help-img img {
+  border-radius: 25px;
+}
+
+#appointment {
+  padding: 50px 0px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+#appointment .appointment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+#appointment .appointment .appointment-img {
+  width: 50%;
+}
+#appointment .appointment .appointment-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#appointment .appointment .appointment-text h4 {
+  font-size: 15px;
+}
+#appointment .appointment .appointment-text h2 {
+  font-size: 45px;
+}
+#appointment .appointment .appointment-text p {
+  opacity: 0.7;
+}
+
+#doctor {
+  padding: 50px 0px;
+}
+#doctor .doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#doctor .doctor #dr-img {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }/*# sourceMappingURL=style.css.map */

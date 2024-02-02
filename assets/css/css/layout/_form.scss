@@ -1,0 +1,33 @@
+#appointment {
+    padding: 50px 0px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    .appointment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        .appointment-img {
+            width: 50%;
+        }
+
+        .appointment-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h4{
+                font-size: $fontSize1;
+            }
+            h2{
+                font-size: $fontSize2;
+            }
+            p{
+                opacity: .7;
+            }
+
+        }
+    }
+}
