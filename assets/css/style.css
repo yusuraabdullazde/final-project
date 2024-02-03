@@ -125,7 +125,8 @@ nav .nav .element .button:hover {
   justify-content: flex-start;
   gap: 20px;
 }
-#banner .banner .banner-text div .button2, #banner .banner .banner-text div .button3 {
+#banner .banner .banner-text div .button2,
+#banner .banner .banner-text div .button3 {
   display: flex;
   justify-content: center;
   width: 150px;
@@ -133,7 +134,8 @@ nav .nav .element .button:hover {
   color: white;
   border-radius: 25px;
 }
-#banner .banner .banner-text div .button2:hover, #banner .banner .banner-text div .button3:hover {
+#banner .banner .banner-text div .button2:hover,
+#banner .banner .banner-text div .button3:hover {
   transition: all 1s ease;
   overflow: hidden;
   scale: 1.1;
@@ -385,4 +387,156 @@ nav .nav .element .button:hover {
 #doctor .doctor #dr-img {
   display: grid;
   grid-template-columns: repeat(4, auto);
+}
+#doctor .doctor #dr-img .dr-img {
+  position: relative;
+}
+#doctor .doctor #dr-img .dr-img .sekil img {
+  border-radius: 20px;
+}
+#doctor .doctor #dr-img .dr-img .sekil:hover {
+  cursor: pointer;
+}
+#doctor .doctor #dr-img .dr-img .none {
+  position: absolute;
+  top: 150px;
+  right: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+#doctor .doctor #dr-img .dr-img .none i {
+  color: #4851d5;
+  font-size: 20px;
+}
+
+#dr {
+  background-color: #4851d5;
+  padding: 50px 0;
+}
+#dr .dr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#dr .dr .dr-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+  color: white;
+}
+#dr .dr .dr-text h1 {
+  font-size: 50px;
+}
+#dr .dr .dr-text div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#dr .dr .dr-text div .button2,
+#dr .dr .dr-text div .button3 {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 25px;
+}
+#dr .dr .dr-text div .button2:hover,
+#dr .dr .dr-text div .button3:hover {
+  transition: all 1s ease;
+  overflow: hidden;
+  scale: 1.1;
+}
+#dr .dr .dr-text div .button2 {
+  background-color: white;
+  color: black;
+}
+#dr .dr .dr-text div .button3 {
+  background-color: #4851d5;
+  border: 1px solid gray;
+}
+
+#footer {
+  padding: 50px 0px;
+  background-color: #4851d5;
+}
+#footer .footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 50px;
+}
+#footer .footer .footer-one {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+#footer .footer .footer-one .item > div {
+  width: 200px;
+}
+#footer .footer .footer-one .item li {
+  list-style-type: none;
+  cursor: pointer;
+}
+#footer .footer .footer-one .item .icons {
+  display: flex;
+  gap: 10px;
+}
+#footer .footer .footer-one .item .icons i {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pad: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+#footer .footer .footer-one .item .icons i:hover {
+  color: #4851d5;
+  background-color: white;
+  transition: all 1s ease;
+}
+#footer .footer .footer-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+#footer .footer .footer-two > div {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+#footer .footer .footer-two input[type=text] {
+  width: 400px;
+  height: 50px;
+  border-radius: 40px;
+  padding: 0 0 0 20px;
+}
+#footer .footer .footer-two a {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  padding: 30px 0px;
+  background-color: #4851d5;
+  border-top: 1px solid gray;
+  color: white;
+}
+footer .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

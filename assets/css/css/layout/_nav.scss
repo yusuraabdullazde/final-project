@@ -6,19 +6,20 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-       
+
         .img {
             width: 200px;
             border-right: 1px solid black;
             padding: 0 60px 0 0;
             cursor: pointer;
-              &:hover{
-                img{
+
+            &:hover {
+                img {
                     scale: 1.1;
-                    overflow:hidden;
+                    overflow: hidden;
                     transition: all 1s;
                 }
-              }
+            }
         }
 
         .list {
@@ -35,14 +36,17 @@ nav {
                     font-weight: bold;
                     display: flex;
                     gap: 10px;
-                    i{
+
+                    i {
                         color: red;
                     }
-                    &:hover{
+
+                    &:hover {
                         color: black;
                         transition: all 1s ease;
-                        i{
-                            color:black;
+
+                        i {
+                            color: black;
                         }
                     }
                 }
@@ -64,9 +68,11 @@ nav {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                a{
+
+                a {
                     font-weight: 600;
                 }
+
                 i {
                     color: $color1;
                     font-size: 18px;
@@ -78,7 +84,8 @@ nav {
                 color: white;
                 background-color: $color1;
                 border-radius: 25px;
-                &:hover{
+
+                &:hover {
                     transition: all 1s ease;
                     overflow: hidden;
                     scale: 1.1;

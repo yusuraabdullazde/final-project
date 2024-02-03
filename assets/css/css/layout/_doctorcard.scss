@@ -1,13 +1,46 @@
-#doctor{
+#doctor {
     padding: 50px 0px;
-    .doctor{
+
+    .doctor {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
-         #dr-img{
+
+        #dr-img {
             display: grid;
-            grid-template-columns: repeat(4,auto);
-         }
+            grid-template-columns: repeat(4, auto);
+
+            .dr-img {
+                position: relative;
+
+                .sekil {
+
+                    img {
+                        border-radius: 20px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .none {
+
+                    position: absolute;
+                    top: 150px;
+                    right: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 10px;
+
+                    i {
+                        color: $color1;
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
     }
 }
