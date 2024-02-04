@@ -29,7 +29,43 @@ nav {
             align-items: center;
             gap: 50px;
 
+            #down {
+                position: relative;
+                transition: all .6s;
+
+                &:hover {
+                    .down {
+                        display: block;
+                        transition: all 1s ease;
+                    }
+                }
+                .down {
+                    background-color: white;
+                    display: none;
+                    width: 150px;
+                    line-height: 30px;
+                    padding: 10px 0;
+                    position: absolute;
+                    top: 50px;
+                    border-radius: 20px;
+    
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      
+                        li {
+                            list-style-type: none;
+    
+                        }
+                    }
+                }
+    
+            }
+
+          
             li {
+
                 a {
                     text-decoration: none;
                     color: #0e0e2569;

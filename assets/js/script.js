@@ -8,7 +8,7 @@ num.forEach((nums) => {
 
     let count = setInterval(function(){
         start += 1;
-        nums.textContent = start;
+        nums.textContent = start+"+";
         if (start == end) {
             clearInterval(count)
         }

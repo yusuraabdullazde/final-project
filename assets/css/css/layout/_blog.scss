@@ -1,0 +1,55 @@
+#blog {
+    padding: 50px 0px;
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .basliq {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .yazi {
+                font-size: $fontSize2;
+            }
+
+            a {
+                background-color: $color1;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                border-radius: 18px;
+
+            }
+
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            img,h6 , h3{
+                cursor: pointer;
+            }
+            h6{
+                color: $color1;
+            }
+            p{
+                opacity: .7;
+            }
+        }
+        .hover06 img {
+            -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .hover06 .card:hover img {
+           
+            -webkit-transform: rotate(5deg) scale(1);
+            transform: rotate(5deg) scale(1);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+#accordion{
+    padding: 50px 0px;
+    .accordion{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .accordion-img{
+            width: 50%;
+            height: 600px;
+        }
+        .accordion-text{
+            width: 46%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                #accordion-item{
+                    width: 100%;
+                }
+            }
+          
+        }
+    }
+}

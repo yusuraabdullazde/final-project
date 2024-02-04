@@ -49,6 +49,32 @@ nav .nav .list {
   align-items: center;
   gap: 50px;
 }
+nav .nav .list #down {
+  position: relative;
+  transition: all 0.6s;
+}
+nav .nav .list #down:hover .down {
+  display: block;
+  transition: all 1s ease;
+}
+nav .nav .list #down .down {
+  background-color: white;
+  display: none;
+  width: 150px;
+  line-height: 30px;
+  padding: 10px 0;
+  position: absolute;
+  top: 50px;
+  border-radius: 20px;
+}
+nav .nav .list #down .down ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav .nav .list #down .down ul li {
+  list-style-type: none;
+}
 nav .nav .list li a {
   text-decoration: none;
   color: rgba(14, 14, 37, 0.4117647059);
@@ -357,7 +383,11 @@ nav .nav .element .button:hover {
   gap: 30px;
 }
 #appointment .appointment .appointment-img {
-  width: 50%;
+  width: 40%;
+  height: 600px;
+}
+#appointment .appointment .appointment-img img {
+  border-radius: 30px;
 }
 #appointment .appointment .appointment-text {
   width: 50%;
@@ -412,22 +442,26 @@ nav .nav .element .button:hover {
 
 #dr {
   background-color: #4851d5;
-  padding: 50px 0;
+  padding: 90px 0;
 }
 #dr .dr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 #dr .dr .dr-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 45%;
+  width: 55%;
   color: white;
 }
 #dr .dr .dr-text h1 {
   font-size: 50px;
+}
+#dr .dr .dr-text h4 {
+  font-size: 14px;
 }
 #dr .dr .dr-text div {
   display: flex;
@@ -456,6 +490,13 @@ nav .nav .element .button:hover {
 #dr .dr .dr-text div .button3 {
   background-color: #4851d5;
   border: 1px solid gray;
+}
+#dr .dr .dr-img {
+  margin: -70px 0;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
 }
 
 #footer {
@@ -539,4 +580,77 @@ footer .end {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#accordion {
+  padding: 50px 0px;
+}
+#accordion .accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#accordion .accordion .accordion-img {
+  width: 50%;
+  height: 600px;
+}
+#accordion .accordion .accordion-text {
+  width: 46%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#accordion .accordion .accordion-text .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#accordion .accordion .accordion-text .text #accordion-item {
+  width: 100%;
+}
+
+#blog {
+  padding: 50px 0px;
+}
+#blog .blog {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#blog .blog .basliq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#blog .blog .basliq .yazi {
+  font-size: 45px;
+}
+#blog .blog .basliq a {
+  background-color: #4851d5;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 18px;
+}
+#blog .blog .cards {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#blog .blog .cards img, #blog .blog .cards h6, #blog .blog .cards h3 {
+  cursor: pointer;
+}
+#blog .blog .cards h6 {
+  color: #4851d5;
+}
+#blog .blog .cards p {
+  opacity: 0.7;
+}
+#blog .blog .hover06 img {
+  transform: rotate(0) scale(1);
+  transition: 0.3s ease-in-out;
+}
+#blog .blog .hover06 .card:hover img {
+  transform: rotate(5deg) scale(1);
 }/*# sourceMappingURL=style.css.map */
