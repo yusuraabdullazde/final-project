@@ -63,3 +63,30 @@
         }
     }
 }
+
+@media screen and (max-width:995px) {
+    .container{
+        padding: 0px 30px;
+    }
+    #dr{
+        padding: 50px 0px;
+        .dr{
+            h1{
+                font-size: 40px;
+            }
+            .dr-img{
+                width: 50%;
+                bottom: 0px;
+                margin:-50px 0 ;
+            }
+        }
+    }
+}
+
+// @media screen and (max-width:720px) {
+//     #dr{
+//         .dr{
+//             flex-direction: column;
+//         }
+//     }
+// }

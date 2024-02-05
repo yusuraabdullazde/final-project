@@ -12,6 +12,9 @@
 
             .yazi {
                 font-size: $fontSize2;
+                a{
+                    font-size: 20px;
+                }
             }
 
             a {
@@ -38,6 +41,28 @@
             p{
                 opacity: .7;
             }
+            .fav-basket{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+                i{
+                    font-size: 20px;
+                    background-color: $color1;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    &:hover{
+                       background-color: $color2;
+                        transition: all .5s ease;
+                        color: $color1;
+                    }
+                }
+            }
         }
         .hover06 img {
             -webkit-transform: rotate(0) scale(1);
@@ -47,9 +72,50 @@
         }
 
         .hover06 .card:hover img {
-           
             -webkit-transform: rotate(5deg) scale(1);
             transform: rotate(5deg) scale(1);
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #blog{
+        .blog{
+           .cards{
+            gap: 20px;
+           }
+        }
+    }
+}
+
+@media  screen and (max-width:1000px) {
+    #blog{
+        .blog{
+           .cards{
+            flex-wrap: wrap;
+           }
+        }
+    }
+}
+
+@media  screen and (max-width:969px) {
+    #blog{
+        .blog{
+           .cards{
+               display: flex;
+               justify-content: center;
+           }
+        }
+    }
+}
+
+@media  screen and (max-width:550px) {
+    #blog{
+        .blog{
+           .basliq{
+            flex-direction: column;
+              
+           }
         }
     }
 }

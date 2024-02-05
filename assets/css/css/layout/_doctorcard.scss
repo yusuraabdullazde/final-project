@@ -44,3 +44,32 @@
         }
     }
 }
+
+
+@media  screen and (max-width:1157px) {
+    #doctor{
+      .doctor{
+          #dr-img{
+              grid-template-columns: auto auto auto;
+          }
+      }
+    }
+  }
+  @media  screen and (max-width:857px) {
+    #doctor{
+      .doctor{
+          #dr-img{
+              grid-template-columns: auto auto;
+          }
+      }
+    }
+  }
+@media  screen and (max-width:550px) {
+  #doctor{
+    .doctor{
+        #dr-img{
+            grid-template-columns: auto;
+        }
+    }
+  }
+}

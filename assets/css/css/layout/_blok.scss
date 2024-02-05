@@ -1,5 +1,5 @@
 #blok {
-    padding: 50px 0px;
+    padding: 80px 0px;
     background-color: $color1;
     color: white;
 
@@ -35,3 +35,13 @@
         }
     }
 }
+
+@media screen and (max-width:1055px) {
+    #blok{
+        .blok{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+

@@ -1,0 +1,96 @@
+#card {
+    padding: 80px 0px;
+    border-top: 1px solid gray;
+
+    .card {
+        border: none;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: $fontSize2;
+        }
+
+        h6 {
+            color: $color1;
+            font-weight: bold;
+        }
+
+        .card-element {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 20px;
+
+            .item {
+                width: 380px;
+                padding: 40px;
+                background-color: $color2;
+                border-radius: 20px;
+                height: 330px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+
+                .card-img {
+                    background-color: white;
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                  
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+
+                p {
+                    font-size: $fontSize1;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1275px) {
+    #card{
+        .card{
+            .card-element{
+                grid-template-columns: repeat(2,auto);
+                justify-content: flex-start;
+                .item{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:925px) {
+    #card{
+        .card{
+            .card-element{
+              .item{
+                width: 350px;
+              }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    #card{
+        .card{
+            h2{
+                font-size: 30px;
+            }
+            .card-element{
+                grid-template-columns: auto;
+               
+            }
+        }
+    }
+}
