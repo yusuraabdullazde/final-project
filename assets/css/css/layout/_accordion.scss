@@ -7,6 +7,9 @@
         .accordion-img{
             width: 50%;
             height: 600px;
+            img{
+                border-radius: 20px;
+            }
         }
         .accordion-text{
             width: 46%;
@@ -23,6 +26,27 @@
                 }
             }
           
+        }
+    }
+}
+
+@media screen and (max-width:810px) {
+    #accordion{
+        .accordion{
+            .accordion-img{
+                width: 40%;
+            }
+        }
+    }
+}
+@media screen and (max-width:680px) {
+    #accordion{
+        .accordion{
+            flex-direction: column;
+            gap:20px;
+               .accordion-img, .accordion-text{
+                width: 100%;
+               }
         }
     }
 }

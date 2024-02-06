@@ -12,7 +12,8 @@
         .appointment-img {
             width: 40%;
             height: 600px;
-            img{
+
+            img {
                 border-radius: 30px;
             }
         }
@@ -22,16 +23,35 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
-            h4{
+
+            h4 {
                 font-size: $fontSize1;
             }
-            h2{
+
+            h2 {
                 font-size: $fontSize2;
             }
-            p{
+
+            p {
                 opacity: .7;
             }
 
+        }
+    }
+}
+
+@media screen and (max-width:785px) {
+    #appointment {
+        .appointment {
+            flex-direction: column;
+
+            .appointment-img,
+            .appointment-text {
+                width: 100%;
+            }
+            .appointment-img{
+                height: 400px;
+            }
         }
     }
 }

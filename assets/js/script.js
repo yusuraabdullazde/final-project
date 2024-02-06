@@ -15,6 +15,17 @@ num.forEach((nums) => {
     }, dur);
 })
 
+const menu = document.querySelector(".list")
+const menubtn = document.querySelector("#menu")
+const closebtn = document.querySelector("#close")
+menubtn.addEventListener("click", () => {
+    menu.style.transform = "translateX(100%)"
+    menu.classList.add("active")
+    closebtn.addEventListener("click", () => {
+        menu.style.transform = "translateX(0%)"
+        menu.classList.remove("active")
+    })
+})
 
 const card = document.querySelector(".card-element")
 function myData() {
@@ -29,7 +40,8 @@ function myData() {
             </div>
             <h3>${element.first_name}</h3>
             <p>${element.last_name}.</p>
-            <a href="#">Learn More <i class="bi bi-arrow-right"></i></a>
+            <a href="./detail.html?id=${element.id}">Learn More <i class="bi bi-arrow-right"></i></a>
+            <i class="bi bi-cart4" id="basket"></i>
         </div>`
             })
         })
@@ -57,7 +69,6 @@ function myCard(){
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a…</p>
                                 <div class="fav-basket">
                                     <i class="bi bi-heart-fill bi${elem.id}" onclick="addFav(${elem.id})"></i>
-                                    <i class="bi bi-cart4"></i>
                                  </div>
                             </div>
                         </div>`
@@ -72,7 +83,6 @@ function myCard(){
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a…</p>
                                 <div class="fav-basket">
                                     <i class="bi bi-heart" bi${elem.id} onclick="addFav(${elem.id})"></i>
-                                    <i class="bi bi-cart4"></i>
                                  </div>
                             </div>
                         </div>`
@@ -107,3 +117,5 @@ function addFav(id){
         })
     })
 }
+
+

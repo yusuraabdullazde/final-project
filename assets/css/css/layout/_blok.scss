@@ -36,10 +36,24 @@
     }
 }
 
-@media screen and (max-width:1055px) {
+@media screen and (max-width:900px) {
     #blok{
         .blok{
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+
+            .two{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:660px) {
+    #blok{
+        .blok{
+           grid-template-columns: auto;
         }
     }
 }

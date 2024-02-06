@@ -18,7 +18,7 @@
             }
 
             h2 {
-                font-size: $fontSize2;
+                font-size: 3vw;
             }
 
             .txt2 {
@@ -63,6 +63,42 @@
                 border-radius: 25px;
 
             }
+        }
+    }
+}
+
+@media screen and (max-width:1096px) {
+    #help{
+        .help{
+          .help-text{
+            width: 40%;
+          }
+          .help-img{
+            width: 45%;
+          }
+        }
+}
+}
+
+@media screen and (max-width:832px) {
+    #help{
+        .help{
+            flex-direction: column;
+            .help-img, .help-text{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:645px) {
+    #help{
+        .help{
+           .help-text{
+            .txt2{
+                flex-direction: column;
+            }
+           }
         }
     }
 }
