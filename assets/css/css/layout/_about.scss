@@ -52,9 +52,7 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 30px;
-                video:focus{
-                    outline: none;
-                }
+              
                 .close-btn{
                     position: absolute;
                     top: 10px;
@@ -120,7 +118,24 @@
         }
     }
 }
-
+.modal{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 0%, 0.6);
+    .bi-x-lg{
+        position: absolute;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        top: 20px;
+    }
+}
 @media screen and (max-width:1200px) {
     #about {
         .about {

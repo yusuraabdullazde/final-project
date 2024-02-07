@@ -41,7 +41,6 @@ function myData() {
             <h3>${element.first_name}</h3>
             <p>${element.last_name}.</p>
             <a href="./detail.html?id=${element.id}">Learn More <i class="bi bi-arrow-right"></i></a>
-            <i class="bi bi-cart4" id="basket"></i>
         </div>`
             })
         })
@@ -51,72 +50,28 @@ myData()
 
 const card2 = document.querySelector(".cards")
 function myCard() {
-    fetch('http://localhost:3000/card')
+    fetch("http://localhost:3000/card")
         .then(res => res.json())
         .then(data => {
-            fetch("http://localhost:3000/fav")
-                .then(res => res.json())
-                .then(datafav => {
-                    data.forEach(elem => {
-                        if (datafav.find(f => f.id == elem.id)) {
-                            card2.innerHTML += `
+            data.forEach(elem => {
+                card2.innerHTML += `
                 <div class="card" style="width: 25rem;">
-                            <img src="./assets/image/covid-vaccine-heart-hands-and-nurse-with-patient-GJ2BW2R-1024x683.jpg"
+                            <img src="${elem.image}"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">${elem.first_name}</h6>
                                 <h3>${elem.last_name}</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a…</p>
-                                <div class="fav-basket">
-                                    <i class="bi bi-heart-fill bi${elem.id}" onclick="addFav(${elem.id})"></i>
-                                 </div>
                             </div>
                         </div>`
-                        } else {
-                            card2.innerHTML += `
-                <div class="card" style="width: 25rem;">
-                            <img src="./assets/image/covid-vaccine-heart-hands-and-nurse-with-patient-GJ2BW2R-1024x683.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">${elem.first_name}</h6>
-                                <h3>${elem.last_name}</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a…</p>
-                                <div class="fav-basket">
-                                    <i class="bi bi-heart" bi${elem.id} onclick="addFav(${elem.id})"></i>
-                                 </div>
-                            </div>
-                        </div>`
-                        }
 
-                    })
-                })
+
+            })
         })
 }
 
 myCard()
-function addFav(id) {
-    const bi = document.querySelector(`.bi${id}`)
-    axios.get(`http://localhost:3000/card/${id}`)
-        .then(res => {
-            return res.data
-        })
-        .then(res => {
-            axios.get("http://localhost:3000/fav")
-                .then(post => {
-                    let like = post.data.find(f => f.id == res.id)
-                    if (!like) {
-                        axios.post("http://localhost:3000/fav", res)
-                        bi.classList.add("bi-heart-fill")
-                        bi.classList.remove("bi-heart")
-                    } else {
-                        axios.delete(`http://localhost:3000/fav/${id}`)
-                        bi.classList.remove("bi-heart-fill")
-                        bi.classList.add("bi-heart")
 
-                    }
-                })
-        })
-}
 
 const li = document.querySelectorAll(".list li a")
 const section = document.querySelectorAll("section")
@@ -154,8 +109,9 @@ function sendEmail() {
 
 
 const drImg = document.querySelector("#dr-img")
+page = 1
 function doctorCard() {
-    fetch("http://localhost:3000/doctor")
+    fetch(`http://localhost:3000/doctor?_page=${page}&_limit=4`)
         .then(res => res.json())
         .then(data => {
             data.forEach(element => {
@@ -166,10 +122,12 @@ function doctorCard() {
                                 alt="">
                         </div>
                         <div class="none">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-linkedin"></i>
-                            <i class="bi bi-twitter"></i>
-                        </div>
+                        <i class="bi bi-facebook"></i>
+                        <a href="./doctordetail.html?id=${element.id}">
+                        <i class="bi bi-info-circle"></i>
+                        </a>
+                        <i class="bi bi-twitter"></i>
+                    </div>
                         <h4>${element.name}</h4>
                         <p>${element.pese}</p>
                     </div> `
@@ -178,3 +136,26 @@ function doctorCard() {
 }
 
 doctorCard()
+
+
+
+const videoicon = document.querySelector("#videoicon")
+videoicon.addEventListener('click', () => {
+    console.log("salam");
+    const modal = document.createElement("div")
+    modal.classList.add("modal")
+    modal.innerHTML = `
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qsLEODxl35Q?si=NccNCSnyOCUihaQp" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+     picture-in-picture; web-share" allowfullscreen></iframe>
+     <i class="bi bi-x-lg"></i>
+    `
+    document.body.appendChild(modal)
+    const closebtn = document.querySelector(".bi-x-lg")
+    closebtn.addEventListener("click", () => {
+        modal.remove()
+    })
+})
+
+

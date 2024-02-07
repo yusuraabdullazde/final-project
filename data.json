@@ -41,47 +41,152 @@
     {
       "id": 1,
       "first_name": "SEPTEMBER 28, 2023",
-      "last_name": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit.",
-      "image": "./assets/image/icon2.jpg"
+      "last_name": "Can creatine supplements help people",
+      "image": "./assets/image/covid-vaccine-heart-hands-and-nurse-with-patient-GJ2BW2R-1024x683.jpg"
     },
     {
       "id": 2,
       "first_name": "SEPTEMBER 28, 2023",
-      "last_name": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit.",
-      "image": "./assets/image/icon2.jpg"
+      "last_name": "Not all plant-based diets are good diet",
+      "image": "./assets/image/diverse-group-of-young-medics-and-nurses-working-d-PM93Q7C-1024x683.jpg"
     },
     {
       "id": 3,
       "first_name": "SEPTEMBER 28, 2023",
-      "last_name": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit.",
-      "image": "./assets/image/icon2.jpg"
+      "last_name": "How therapy could become a treatment",
+      "image": "./assets/image/medic-showing-bottle-of-pills-to-patient-at-examin-ZEE7GJZ-1024x683.jpg"
     }
   ],
-  "doctor":[
+  "doctor": [
     {
-      "id":1,
-      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
-      "name":"Dr.Ali",
-      "pese":"pediatr"
+      "id": 1,
+      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
+      "name": "Dr.James Samuels",
+      "pese": "Pediatrics"
     },
     {
-      "id":2,
-      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
-      "name":"Dr.Ali",
-      "pese":"pediatr"
+      "id": 2,
+      "image": "./assets/image/portrait-of-young-woman-doctor-at-hospital-corrido2-F8RCC4T.jpg",
+      "name": "Dr. Lanna Wattson",
+      "pese": "Psychiatry"
     },
     {
-      "id":3,
-      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
-      "name":"Dr.Ali",
-      "pese":"pediatr"
+      "id": 3,
+      "image": "./assets/image/portrait-of-happy-doctor-at-hospital-corridor2-CX3VSGM.jpg",
+      "name": "Dr.Martin Franses",
+      "pese": "Cardiology"
     },
     {
-      "id":4,
-      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
-      "name":"Dr.Ali",
-      "pese":"pediatr"
+      "id": 4,
+      "image": "./assets/image/portrait-of-female-doctor-or-nurse-standing-in-hos-J37Z55D.jpg",
+      "name": "Dr.Lara Houston",
+      "pese": "Orthopedics"
+    },
+    {
+      "id": 4,
+      "image": "./assets/image/portrait-of-female-doctor-or-nurse-standing-in-hos-J37Z55D.jpg",
+      "name": "Dr.Lara Houston",
+      "pese": "Orthopedics"
+    },
+    {
+      "id": 5,
+      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
+      "name": "Dr.James Samuels",
+      "pese": "Pediatrics"
+    },
+    {
+      "id": 7,
+      "image": "./assets/image/portrait-of-young-woman-doctor-at-hospital-corrido2-F8RCC4T.jpg",
+      "name": "Dr. Lanna Wattson",
+      "pese": "Psychiatry"
+    },
+    {
+      "id": 8,
+      "image": "./assets/image/portrait-of-happy-doctor-at-hospital-corridor2-CX3VSGM.jpg",
+      "name": "Dr.Martin Franses",
+      "pese": "Cardiology"
     }
   ],
-    "fav": []
+  "detail": [
+    {
+      "id": 1,
+      "name": "Pharmacy services",
+      "image": "./assets/image/181113-pharmacist-editorial.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 2,
+      "name": "Medical Specialist",
+      "image": "./assets/image/wysiwyg-uploads_1580196666465-doctor.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Medical Checkup",
+      "image": "./assets/image/197_19_ketahui-seputar-manfaat-dan-persiapan-medical-check-up.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Health Consultation",
+      "image": "./assets/image/istockphoto-1319031310-612x612.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Ambulance Service",
+      "image": "./assets/image/view-from-inside-ambulance-uniformed-emergency-services-workers-caring-patient-stretcher-during-coronavirus-pandemic_657921-1489.avif"
+    },
+    {
+      "id": 6,
+      "name": "Health Assurance",
+      "image": "./assets/image/close-up-doctor-with-stethoscope_23-2149191355.avif"
+    }
+  ],
+  "drdetail": [
+    {
+      "id": 1,
+      "name": "Medical Specialist",
+      "profession": "Pediatrics",
+      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 2,
+      "name": "Medical Checkup",
+      "profession": "Psychiatry",
+      "image": "./assets/image/portrait-of-young-woman-doctor-at-hospital-corrido2-F8RCC4T.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 3,
+      "name": "Health Consultation",
+      "profession": "Cardiology",
+      "image": "./assets/image/portrait-of-happy-doctor-at-hospital-corridor2-CX3VSGM.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 4,
+      "name": "Ambulance Service",
+      "profession": "Orthopedics",
+      "image": "./assets/image/portrait-of-female-doctor-or-nurse-standing-in-hos-J37Z55D.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    }
+  ],
+  "form": [
+    {
+      "first_name": "aydfyuds",
+      "last_name": "n;klijioj[",
+      "email": "yusurea@gmail.com",
+      "password": "1234",
+      "id": 1
+    }
+  ]
 }

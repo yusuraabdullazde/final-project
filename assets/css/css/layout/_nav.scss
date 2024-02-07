@@ -2,6 +2,8 @@ nav {
     padding: 15px 0px;
     border-bottom: 1px solid gray;
 
+
+
     .nav {
         display: flex;
         justify-content: space-between;
@@ -28,7 +30,7 @@ nav {
             justify-content: space-between;
             align-items: center;
             gap: 50px;
-
+            margin: 0;
 
 
             #close {
@@ -39,7 +41,11 @@ nav {
             #down {
                 position: relative;
                 transition: all .6s;
-
+                &:hover {
+                    .down{
+                        opacity: 1;
+                    }
+                }
                 .down {
                     background-color: white;
                     // display: none;
@@ -49,7 +55,6 @@ nav {
                     position: absolute;
                     left: 0;
                     opacity: 0;
-                    visibility: hidden;
                     z-index: 1;
                     top: 35px;
                     border-radius: 20px;
@@ -58,14 +63,11 @@ nav {
                     justify-content: center;
                     float: none;
 
-                    &:hover {
-                        opacity: 1;
-                        visibility: visible;
-                    }
+                  
 
                     li {
                         list-style-type: none;
-
+                        cursor: pointer;
                     }
 
                 }
@@ -74,7 +76,7 @@ nav {
 
 
             li {
-                float: left;
+                // float: left;
                 position: relative;
                 width: auto;
 
@@ -83,7 +85,11 @@ nav {
                     color: #0e0e2569;
                     font-weight: bold;
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                     gap: 10px;
+                    font-size: 13px;
+
 
                     i {
                         color: red;
@@ -92,7 +98,8 @@ nav {
                     &:hover {
                         color: black;
                         transition: all 1s ease;
-                        .down{
+
+                        .down {
                             opacity: 1;
                             visibility: visible;
                         }
