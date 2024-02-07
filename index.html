@@ -25,15 +25,13 @@
                     <div class="close">
                         <i class="bi bi-x" id="close"></i>
                     </div>
-                    <li><a href="#">HOME</a></li>
-                    <li> <a href="about.html">ABOUT</a></li>
-                    <li id="down"><a href="services.html">SERVICES <i class="bi bi-chevron-down"></i></a>
-                        <div class="down">
-                            <ul>
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li> <a href="#about">ABOUT</a></li>
+                    <li id="down"><a href="#services">SERVICES <i class="bi bi-chevron-down"></i></a>
+                        <ul class="down">
                                 <li>Services</li>
                                 <li>Services Detail</li>
-                            </ul>
-                        </div>
+                        </ul>
                     </li>
                     <li><a href="./fav.html">FAVOURITE</a></li>
                     <li><a href="./fav.html">BASKET(<span class="total-count"></span>)</a></li>
@@ -89,26 +87,26 @@
                         <i class="bi bi-person"></i>
                     </div>
                     <div class="write">
-                        <p> Expert Doctors</p>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                        <p>Expert Doctors</p>
+                        <span>In medicine, a medical doctor who is considered an expert is one who is accomplished and highly respected in a specialty such as the brain.                        </span>
                     </div>
                 </div>
                 <div class="two">
                     <div class="icon">
-                        <i class="bi bi-person"></i>
+                        <i class="bi bi-hospital"></i>
                     </div>
                     <div class="write">
-                        <p> Expert Doctors</p>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                        <p>Emergency Care</p>
+                        <span>Emergency Care is an essential part of the health system and serves as the first point of contact for many around the world.</span>
                     </div>
                 </div>
                 <div class="two">
                     <div class="icon">
-                        <i class="bi bi-person"></i>
+                        <i class="bi bi-telephone"></i>
                     </div>
                     <div class="write">
-                        <p> Expert Doctors</p>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                        <p>24/7 Full Support</p>
+                        <span>Customers can get help and find answers to questions as soon as they come up—24/7 and in real-time.</span>
                     </div>
                 </div>
             </div>
@@ -126,6 +124,10 @@
                 </div>
                 <div class="about-video">
                     <i class="bi bi-play-circle-fill"></i>
+                    <!-- <video src="#">
+                        <a href="https://www.youtube.com/watch?v=wnseY8goQoc"></a>
+                    </video>
+                    <img src="./assets/image/computer-icons-button-checkbox-delete-dust-bin-erase-eraser-remove-icon.jpg" alt="" class="close-btn"> -->
                 </div>
                </div>
                 <div class="about-text">
@@ -140,12 +142,12 @@
                                 consectetur.</span>
                         </div>
                         <div>
-                            <h3>Our Vision</h3>
+                            <h3>Our Mission</h3>
                             <span>The most interesting hospital in the world. Lorem ipsum dolor sit amet,
                                 consectetur.</span>
                         </div>
                     </div>
-                    <a href="#">Learn More</a>
+                    <a href="./doctorform.html">Learn More</a>
                 </div>
             </div>
         </div>
@@ -204,30 +206,39 @@
                     <h2>Book Your Appointment</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
                         mattis. </p>
-                    <div class="form">
-                        <form class="row g-3 needs-validation" novalidate>
+                    <div class="form" >
+                        <form class="row g-3 needs-validation" novalidate onsubmit="sendEmail(); reset(); return false">
                             <div class="col-md-12">
                                 <label for="validationCustom01" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                <input type="text" class="form-control" id="validationCustom01" required>
                                 <div class="valid-feedback">
                                     Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="validationCustom02" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                <input type="text" class="form-control" id="validationCustom02" required>
                                 <div class="valid-feedback">
                                     Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="validationCustomUsername" class="form-label">Username</label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                    <input type="text" class="form-control" id="validationCustomUsername"
+                                    <input type="text" class="form-control email" id="validationCustomUsername"
                                         aria-describedby="inputGroupPrepend" required>
                                     <div class="invalid-feedback">
                                         Please choose a username.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
                                     </div>
                                 </div>
                             </div>
@@ -237,6 +248,9 @@
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
                                 </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="validationCustom03" class="form-label">Time</label>
@@ -244,12 +258,18 @@
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
                                 </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustom03" class="form-label">Message</label>
                                 <textarea type="text" class="form-control" id="validationCustom03" required></textarea>
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
                                 </div>
                             </div>
                             <div class="col-12">
@@ -267,58 +287,7 @@
                 <h4>OUR DOCTORS</h4>
                 <h2>Meet Our Amazing Doctors</h2>
                 <div id="dr-img">
-                    <div class="dr-img">
-                        <div class="sekil">
-                            <img src="./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png"
-                                alt="">
-                        </div>
-                        <div class="none">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-linkedin"></i>
-                            <i class="bi bi-twitter"></i>
-                        </div>
-                        <h4>James Samuels</h4>
-                        <p>Pediatrics</p>
-                    </div>
-                    <div class="dr-img">
-                        <div class="sekil">
-                            <img src="./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png"
-                                alt="">
-                        </div>
-                        <div class="none">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-linkedin"></i>
-                            <i class="bi bi-twitter"></i>
-                        </div>
-                        <h4>James Samuels</h4>
-                        <p>Pediatrics</p>
-                    </div>
-                    <div class="dr-img">
-                        <div class="sekil">
-                            <img src="./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png"
-                                alt="">
-                        </div>
-                        <div class="none">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-linkedin"></i>
-                            <i class="bi bi-twitter"></i>
-                        </div>
-                        <h4>James Samuels</h4>
-                        <p>Pediatrics</p>
-                    </div>
-                    <div class="dr-img">
-                        <div class="sekil">
-                            <img src="./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png"
-                                alt="">
-                        </div>
-                        <div class="none">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-linkedin"></i>
-                            <i class="bi bi-twitter"></i>
-                        </div>
-                        <h4>James Samuels</h4>
-                        <p>Pediatrics</p>
-                    </div>
+                   
 
                 </div>
             </div>
@@ -509,6 +478,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

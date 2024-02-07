@@ -28,46 +28,55 @@ nav {
             justify-content: space-between;
             align-items: center;
             gap: 50px;
-            #close{
+
+
+
+            #close {
                 display: none;
                 font-size: 30px;
             }
+
             #down {
                 position: relative;
                 transition: all .6s;
 
-                &:hover {
-                    .down {
-                        display: block;
-                        transition: all 1s ease;
-                    }
-                }
                 .down {
                     background-color: white;
-                    display: none;
+                    // display: none;
                     width: 150px;
                     line-height: 30px;
                     padding: 10px 0;
                     position: absolute;
-                    top: 50px;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 1;
+                    top: 35px;
                     border-radius: 20px;
-    
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                      
-                        li {
-                            list-style-type: none;
-    
-                        }
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    float: none;
+
+                    &:hover {
+                        opacity: 1;
+                        visibility: visible;
                     }
+
+                    li {
+                        list-style-type: none;
+
+                    }
+
                 }
-    
+
             }
 
-          
+
             li {
+                float: left;
+                position: relative;
+                width: auto;
 
                 a {
                     text-decoration: none;
@@ -83,6 +92,10 @@ nav {
                     &:hover {
                         color: black;
                         transition: all 1s ease;
+                        .down{
+                            opacity: 1;
+                            visibility: visible;
+                        }
 
                         i {
                             color: black;
@@ -131,16 +144,17 @@ nav {
                 }
             }
         }
-        #menu{
+
+        #menu {
             display: none;
         }
     }
 }
 
 @media screen and (max-width:1270px) {
-    nav{
-        .nav{
-            .list{
+    nav {
+        .nav {
+            .list {
                 flex-wrap: wrap;
             }
         }
@@ -148,27 +162,32 @@ nav {
 }
 
 @media screen and (max-width:925px) {
-    nav{
-        .nav{
-            #menu{
+    nav {
+        .nav {
+            #menu {
                 display: block;
                 font-size: 30px;
             }
-            .list{
+
+            .list {
                 transition: all 1s ease;
                 position: fixed;
-                background-color:$color1;
+                background-color: $color1;
                 flex-direction: column;
-                min-width:400px;
+                min-width: 400px;
                 height: 100%;
                 top: 0;
-                left:-400px;
-                padding:  50px ;
+                left: -400px;
+                padding: 50px;
                 transform: translate(0%);
-                li{
-                    a{color: white;}
+
+                li {
+                    a {
+                        color: white;
+                    }
                 }
-                #close{
+
+                #close {
                     display: block;
                     color: white;
                 }
@@ -177,11 +196,11 @@ nav {
     }
 }
 
-@media screen and (max-width:740px){
-    nav{
-        .nav{
-            .element{
-                .button{
+@media screen and (max-width:740px) {
+    nav {
+        .nav {
+            .element {
+                .button {
                     display: none;
                 }
             }

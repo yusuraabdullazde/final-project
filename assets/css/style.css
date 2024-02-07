@@ -57,27 +57,34 @@ nav .nav .list #down {
   position: relative;
   transition: all 0.6s;
 }
-nav .nav .list #down:hover .down {
-  display: block;
-  transition: all 1s ease;
-}
 nav .nav .list #down .down {
   background-color: white;
-  display: none;
   width: 150px;
   line-height: 30px;
   padding: 10px 0;
   position: absolute;
-  top: 50px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  top: 35px;
   border-radius: 20px;
-}
-nav .nav .list #down .down ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  float: none;
 }
-nav .nav .list #down .down ul li {
+nav .nav .list #down .down:hover {
+  opacity: 1;
+  visibility: visible;
+}
+nav .nav .list #down .down li {
   list-style-type: none;
+}
+nav .nav .list li {
+  float: left;
+  position: relative;
+  width: auto;
 }
 nav .nav .list li a {
   text-decoration: none;
@@ -92,6 +99,10 @@ nav .nav .list li a i {
 nav .nav .list li a:hover {
   color: black;
   transition: all 1s ease;
+}
+nav .nav .list li a:hover .down {
+  opacity: 1;
+  visibility: visible;
 }
 nav .nav .list li a:hover i {
   color: black;
@@ -276,7 +287,6 @@ nav .nav #menu {
 #blok .blok {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 40px;
 }
 #blok .blok .two {
@@ -353,6 +363,7 @@ nav .nav #menu {
   border-radius: 10px;
 }
 #about .about .img-video .about-video {
+  position: relative;
   background-image: url("../image/doctors-discussing-something-at-hospital-corridor-5HAKCZZ.jpg");
   background-position: center;
   background-size: cover;
@@ -363,10 +374,20 @@ nav .nav #menu {
   align-items: center;
   border-radius: 30px;
 }
+#about .about .img-video .about-video video:focus {
+  outline: none;
+}
+#about .about .img-video .about-video .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
 #about .about .img-video .about-video i {
   font-size: 70px;
   cursor: pointer;
   color: white;
+  position: absolute;
 }
 #about .about .img-video .about-video i:hover {
   color: #4851d5;
@@ -588,10 +609,9 @@ nav .nav #menu {
   position: relative;
 }
 #doctor .doctor #dr-img .dr-img .sekil img {
+  opacity: 1;
   border-radius: 20px;
-}
-#doctor .doctor #dr-img .dr-img .sekil:hover {
-  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 #doctor .doctor #dr-img .dr-img .none {
   position: absolute;
@@ -977,6 +997,10 @@ footer .end {
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+}
+#card .card .card-element .item:hover {
+  border: 1px solid #4851d5;
+  transition: all 0.3s;
 }
 #card .card .card-element .item .bi-cart4 {
   font-size: 20px;

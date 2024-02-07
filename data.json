@@ -57,5 +57,31 @@
       "image": "./assets/image/icon2.jpg"
     }
   ],
-  "fav": []
+  "doctor":[
+    {
+      "id":1,
+      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
+      "name":"Dr.Ali",
+      "pese":"pediatr"
+    },
+    {
+      "id":2,
+      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
+      "name":"Dr.Ali",
+      "pese":"pediatr"
+    },
+    {
+      "id":3,
+      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
+      "name":"Dr.Ali",
+      "pese":"pediatr"
+    },
+    {
+      "id":4,
+      "image":"./assets/image/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png",
+      "name":"Dr.Ali",
+      "pese":"pediatr"
+    }
+  ],
+    "fav": []
 }

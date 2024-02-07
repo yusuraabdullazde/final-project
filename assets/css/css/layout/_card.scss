@@ -32,7 +32,12 @@
                 justify-content: center;
                 gap: 15px;
 
-                .bi-cart4{
+                &:hover {
+                    border: 1px solid $color1;
+                    transition: all .3s;
+                }
+
+                .bi-cart4 {
                     font-size: 20px;
                     background-color: $color1;
                     width: 50px;
