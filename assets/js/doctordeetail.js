@@ -15,7 +15,6 @@ function detailCard(){
                 <p>${el.info1}</p>
                 <a href="#">Make</a>
                 <h3>Areas of Expertise</h3>
-
                 <div id="item">
                 <div class="item">
                     <i class="bi bi-check-lg"></i>

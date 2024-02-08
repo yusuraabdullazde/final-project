@@ -13,13 +13,28 @@
             grid-template-columns: repeat(4, auto);
 
             .item {
-                >div {
+                >div, .f-img {
                     width: 200px;
                 }
-
+                .f{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                h3{
+                    font-size: $fontSize4;
+                }
+                p{
+                    opacity: .7;
+                    font-size: $fontSize1;
+                }
                 li {
                     list-style-type: none;
+                    opacity: .7;
                     cursor: pointer;
+                    a{
+                        color: white;
+                    }
                 }
 
                 .icons {
@@ -79,6 +94,7 @@
                 border-radius: 40px;
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
         }
     }

@@ -1,0 +1,58 @@
+.name-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .video-text {
+        background-image: url('../image/group-of-doctors-on-conference-medical-team-sitti-HHUBV78.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 45%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+
+        i {
+            font-size: 70px;
+            color: white;
+        }
+    }
+
+    .write {
+        width: 48%;
+
+        .write-one {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            p {
+                opacity: .7;
+                font-size: $fontSize1;
+            }
+        }
+
+        .write-two {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 15px;
+
+            ol {
+                list-style-type: none;
+
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    height: 100vh;
+}

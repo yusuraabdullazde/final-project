@@ -128,7 +128,7 @@ function doctorCard() {
                         </a>
                         <i class="bi bi-twitter"></i>
                     </div>
-                        <h4>${element.name}</h4>
+                        <span>${element.name}</span>
                         <p>${element.pese}</p>
                     </div> `
             })
@@ -145,7 +145,7 @@ videoicon.addEventListener('click', () => {
     const modal = document.createElement("div")
     modal.classList.add("modal")
     modal.innerHTML = `
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qsLEODxl35Q?si=NccNCSnyOCUihaQp" 
+    <iframe width="660" height="500" src="https://www.youtube.com/embed/qsLEODxl35Q?si=NccNCSnyOCUihaQp" 
     title="YouTube video player" frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
      picture-in-picture; web-share" allowfullscreen></iframe>

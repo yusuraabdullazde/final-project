@@ -6,6 +6,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -79,6 +80,9 @@ footer .end {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#dr-img .dr-img span {
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1157px) {
@@ -299,10 +303,11 @@ nav .nav .element a {
 }
 nav .nav .element .icon-write {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
-nav .nav .element .icon-write a {
+nav .nav .element .icon-write span {
   font-weight: 600;
 }
 nav .nav .element .icon-write i {
@@ -745,8 +750,6 @@ nav .nav #menu {
 }
 #appointment {
   padding: 50px 0px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
 }
 #appointment .appointment {
   display: flex;
@@ -797,6 +800,31 @@ nav .nav #menu {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+
+#name .name .basliq {
+  width: 100%;
+  height: 380px;
+  background-color: #f3f3ff;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 0;
+  position: relative;
+  text-align: center;
+}
+#name .name .basliq h2 {
+  font-size: 45px;
+}
+#name .name .collectivimg {
+  width: 1200px;
+  height: 400px;
+  position: absolute;
+  top: calc((100% - 200px) / 2);
+  display: flex;
+  justify-content: center;
+}
+#name .name .name-txt {
+  padding: 200px 0 50px 0;
 }
 
 #dr {
@@ -885,12 +913,28 @@ nav .nav #menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
 }
-#footer .footer .footer-one .item > div {
+#footer .footer .footer-one .item > div, #footer .footer .footer-one .item .f-img {
   width: 200px;
+}
+#footer .footer .footer-one .item .f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .footer .footer-one .item h3 {
+  font-size: 22px;
+}
+#footer .footer .footer-one .item p {
+  opacity: 0.7;
+  font-size: 15px;
 }
 #footer .footer .footer-one .item li {
   list-style-type: none;
+  opacity: 0.7;
   cursor: pointer;
+}
+#footer .footer .footer-one .item li a {
+  color: white;
 }
 #footer .footer .footer-one .item .icons {
   display: flex;
@@ -942,6 +986,7 @@ nav .nav #menu {
   border-radius: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1248px) {
@@ -1190,4 +1235,142 @@ nav .nav #menu {
 #name .name .collectivimg {
   width: 1000px;
   height: 400px;
+}
+
+.footer-two h3 {
+  font-size: 22px;
+}
+
+#services .services .basliq {
+  width: 100%;
+  height: 380px;
+  background-color: #f3f3ff;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 0;
+  position: relative;
+  text-align: center;
+}
+#services .services .basliq h2 {
+  font-size: 45px;
+}
+#services .services .servis-img {
+  width: 1200px;
+  height: 400px;
+  position: absolute;
+  top: calc((100% - 200px) / 2);
+  left: 10%;
+}
+#services .services #servis-text {
+  padding: 250px 0 50px 0;
+}
+#services .services #servis-text p {
+  font-size: 15px;
+}
+#services .services #servis-text h2 {
+  font-size: 3.5vw;
+}
+#services .services #servis-text .servis-elem {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+#services .services #servis-text .servis-elem .elem {
+  padding: 50px 40px;
+  width: 370px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid rgb(210, 210, 210);
+}
+#services .services #servis-text .servis-elem .elem:hover {
+  border-color: #4851d5;
+  transition: all 1s;
+}
+#services .services #servis-text .servis-elem .elem .blok1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+#services .services #servis-text .servis-elem .elem .blok1 h2 {
+  font-size: 40px;
+}
+#services .services #servis-text .servis-elem .elem .blok1 p {
+  margin-bottom: 15px;
+}
+#services .services #servis-text .servis-elem .elem .blok1 span {
+  font-size: 22px;
+}
+#services .services #servis-text .servis-elem .elem .blok2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#services .services #servis-text .servis-elem .elem .blok2 .sual {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+#services .services #servis-text .servis-elem .elem .blok2 .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+#services .services #servis-text .servis-elem .elem .blok2 .item i, #services .services #servis-text .servis-elem .elem .blok2 .item p {
+  font-size: 20px;
+}
+#services .services #servis-text .servis-elem .elem .blok2 .item p {
+  opacity: 0.7;
+}
+
+.name-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name-txt .video-text {
+  background-image: url("../image/group-of-doctors-on-conference-medical-team-sitti-HHUBV78.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.name-txt .video-text i {
+  font-size: 70px;
+  color: white;
+}
+.name-txt .write {
+  width: 48%;
+}
+.name-txt .write .write-one {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name-txt .write .write-one p {
+  opacity: 0.7;
+  font-size: 15px;
+}
+.name-txt .write .write-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+.name-txt .write .write-two ol {
+  list-style-type: none;
+}
+.name-txt .write .write-two ol li {
+  margin-bottom: 15px;
+}
+
+.modal {
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

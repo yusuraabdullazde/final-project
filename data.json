@@ -83,28 +83,28 @@
       "pese": "Orthopedics"
     },
     {
-      "id": 4,
-      "image": "./assets/image/portrait-of-female-doctor-or-nurse-standing-in-hos-J37Z55D.jpg",
-      "name": "Dr.Lara Houston",
-      "pese": "Orthopedics"
-    },
-    {
       "id": 5,
-      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
-      "name": "Dr.James Samuels",
+      "image": "./assets/image/portrait-of-young-woman-doctor-with-rescuers-in-ba2-FLP5ZUQ (1).jpg",
+      "name": "Dr. Lucy Wildes",
       "pese": "Pediatrics"
     },
     {
-      "id": 7,
-      "image": "./assets/image/portrait-of-young-woman-doctor-at-hospital-corrido2-F8RCC4T.jpg",
-      "name": "Dr. Lanna Wattson",
+      "id": 6,
+      "image": "./assets/image/group-of-doctors-on-conference-medical-team-sitti-HHUBV78.jpg",
+      "name": "Dr.Amanda Sherman",
       "pese": "Psychiatry"
     },
     {
-      "id": 8,
-      "image": "./assets/image/portrait-of-happy-doctor-at-hospital-corridor2-CX3VSGM.jpg",
-      "name": "Dr.Martin Franses",
+      "id": 7,
+      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
+      "name": "Dr.Pepper Hills",
       "pese": "Cardiology"
+    },
+    {
+      "id": 8,
+      "image": "./assets/image/senior-doctor-with-smartwatch-in-office-P6PMM7R.jpg",
+      "name": "Dr.John Lawson",
+      "pese": "Orthopedics"
     }
   ],
   "detail": [
@@ -175,6 +175,42 @@
       "name": "Ambulance Service",
       "profession": "Orthopedics",
       "image": "./assets/image/portrait-of-female-doctor-or-nurse-standing-in-hos-J37Z55D.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 5,
+      "name": "Medical Specialist",
+      "profession": "Pediatrics",
+      "image": "./assets/image/portrait-of-young-woman-doctor-with-rescuers-in-ba2-FLP5ZUQ (1).jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 6,
+      "name": "Medical Checkup",
+      "profession": "Psychiatry",
+      "image": "./assets/image/group-of-doctors-on-conference-medical-team-sitti-HHUBV78.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 7,
+      "name": "Health Consultation",
+      "profession": "Cardiology",
+      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
+    },
+    {
+      "id": 8,
+      "name": "Ambulance Service",
+      "profession": "Orthopedics",
+      "image": "./assets/image/senior-doctor-with-smartwatch-in-office-P6PMM7R.jpg",
       "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
       "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
       "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"

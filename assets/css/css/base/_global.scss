@@ -3,6 +3,8 @@ $color2:#f3f3ff;
 $color3:#7a7a7a;
 $fontSize1:15px;
 $fontSize2:3.5vw;
+$fontSize3:45px;
+$fontSize4:22px;
 
 
 html {
@@ -12,7 +14,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 .container{
@@ -96,6 +98,9 @@ footer {
             }
 
         }
+      span{
+        font-size: 30px;
+      }
     }
 }
 

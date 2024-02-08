@@ -1,0 +1,96 @@
+.footer-two{
+    h3{
+        font-size: $fontSize4;
+    }
+}
+
+#services{
+    .services{
+        .basliq{
+            width: 100%;
+           height: 380px;
+            background-color: $color2;
+            display: flex;
+            justify-content: center;
+            padding: 50px 0 0 0;
+            // align-items: center;
+           position: relative;
+            text-align: center;
+            h2{
+                font-size: $fontSize3;
+            }
+
+        }
+        .servis-img{
+           width: 1200px;
+           height: 400px;
+           position: absolute;
+           top:calc((100% - 200px)/2);
+           left: 10%;
+        }
+        #servis-text{
+            padding: 250px 0 50px 0;
+
+            p{
+                font-size: $fontSize1;
+            }
+            h2{
+                font-size: $fontSize2;
+            }
+            .servis-elem{
+                display: grid;
+                grid-template-columns: repeat(3,auto);
+                .elem{
+                    padding: 50px 40px;
+                    width: 370px;
+                    height: 500px;
+                    background-color: white;
+                    border-radius: 20px;
+                    border: 1px solid rgb(210, 210, 210);
+                    &:hover{
+                        border-color: $color1;
+                        transition: all 1s;
+                    }
+                    .blok1{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        border-bottom: 1px solid rgb(210, 210, 210);
+                        h2{
+                            font-size: 40px;
+                        }
+                        p{
+                            margin-bottom: 15px;
+                        }
+                        span{
+                            font-size: $fontSize4;
+                        }
+                    }
+                    .blok2{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        .sual{
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin-top: 15px;
+                        }
+                        .item{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 8px;
+                            i, p{
+                                font-size: 20px;
+                            }
+                            p{
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

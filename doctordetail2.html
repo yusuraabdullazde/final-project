@@ -5,14 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-        .name-txt{
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .dtl {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .detail-img {
+            width: 40%;
+        }
+
+        h2 {
+            font-family: 'Rubik', sans-serif;
+            color: blue;
+        }
+
+        .detail-info {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .detail-info h2 {
+            font-size: 45px;
+        }
+
+        .detail-info h3 {
+            font-size: 25px;
+        }
+
+        #item {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+        }
+
+        #item .item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #item .item i,
+        p {
+            font-size: 20px;
+        }
+
+        #item .item i {
+            color: blue;
+        }
+
+        #name-txt {
             text-align: center;
         }
-        .name-txt h6{
-          color:#4851d5;
+
+        .name-txt h6 {
+            color: #4851d5;
         }
-        .name-txt .p{
+
+        .name-txt .p {
             font-size: 45px;
             margin-bottom: 20px;
         }
@@ -48,10 +110,11 @@
                         </ul>
                     </li>
                 </ul>
+
                 <div class="element">
                     <div class="icon-write">
                         <i class="bi bi-telephone-plus"></i>
-                        <a href="">Emergency Call</a>
+                        <span>Emergency Call</span>
                     </div>
                     <a href="" class="button">Appointment</a>
                 </div>
@@ -59,19 +122,61 @@
             </div>
         </div>
     </nav>
+
     <section id="name">
         <div class="name">
             <div class="basliq">
-                <h2>Our Doctors</h2>
+                <h2>Doctor Detail</h2>
             </div>
             <div class="collectivimg">
                 <img src="./assets/image/group-of-doctors-standing-in-hospital-on-medical-c-PXG2Z2J.jpg" alt="">
             </div>
-            <div class="name-txt">
-                <h6>OUR DOCTORS</h6>
-                <p class="p">Meet Our Amazing Doctors</p>
-                <div id="dr-img">
-
+            <div id="name-txt">
+                <div class="container">
+                    <div class="name-txt">
+                        <!-- <h6>DOCTORS</h6>
+                        <p class="p">Meet Our Amazing Doctors</p> -->
+                        <div class="video-text">
+                            <i class="bi bi-play-circle-fill" id="videoicon"></i>
+                        </div>
+                        <div class="write">
+                            <div class="write-one">
+                                <h2>Personal Overview</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius turpis
+                                    porttitor, tincidunt leo vel, euismod neque. Maecenas facilisis lacus ut nunc
+                                    pretium luctus. Mauris malesuada eros ex, vitae suscipit metus pellentesque non.</p>
+                                <p>Aenean tincidunt posuere quam non vestibulum. Suspendisse nec diam mi. Nulla vitae
+                                    convallis leo. Morbi ut turpis dui. Aenean urna justo, posuere in pellentesque et,
+                                    porta vitae neque.</p>
+                            </div>
+                            <div class="write-two">
+                                <h2>Experiences</h2>
+                                <ol>
+                                    <li>
+                                        <strong>
+                                            1.Cardiologist – ABCD Health Clinic
+                                        </strong>
+                                        <p>Location: Texas, US</p>
+                                        <p> Year: 2013 – 2017</p>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                        2.Internal Medicine Residency – ABBA Hospital
+                                        </strong>
+                                        <p>Location: San Diego, CA</p>
+                                        <p> Year: 2017 – 2020</p>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            3.Cardiology Fellowship – Happy Haven Hospital
+                                        </strong>
+                                        <p>Location: Kansas, US</p>
+                                        <p>Year: 2020 – Present</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -82,7 +187,8 @@
             <div class="footer">
                 <div class="footer-one">
                     <div class="item" id="item">
-                        <div>
+                      <div class="f">
+                        <div class="f-img">
                             <img src="./assets/image/logoAsset-3.png" alt="">
                         </div>
                         <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
@@ -91,7 +197,9 @@
                             <i class="bi bi-linkedin"></i>
                             <i class="bi bi-twitter"></i>
                             <i class="bi bi-youtube"></i>
-                        </div>
+                        </div> 
+                    </div>
+                      
                     </div>
                     <div class="item">
                         <h3>Address</h3>
@@ -138,7 +246,7 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/js/doctors.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
-</html>
+</h
