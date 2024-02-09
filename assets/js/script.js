@@ -49,8 +49,9 @@ function myData() {
 myData()
 
 const card2 = document.querySelector(".cards")
+s=1
 function myCard() {
-    fetch("http://localhost:3000/card")
+    fetch(`http://localhost:3000/card?_page=${s}&_limit=3`)
         .then(res => res.json())
         .then(data => {
             data.forEach(elem => {

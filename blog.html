@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .name-txt{
-            text-align: center;
+        .cards {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 20px;
         }
-        .name-txt h6{
-          color:#4851d5;
-        }
-        .name-txt .p{
-            font-size: 45px;
-            margin-bottom: 20px;
+
+        #cards{
+            padding: 200px 0 50px 0;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -63,19 +65,18 @@
     <section id="name">
         <div class="name">
             <div class="basliq">
-                <h2>Our Doctors</h2>
+                <h2>Blog</h2>
             </div>
             <div class="collectivimg">
                 <img src="./assets/image/group-of-doctors-standing-in-hospital-on-medical-c-PXG2Z2J.jpg" alt="">
             </div>
-            <div class="name-txt">
-                <!-- <h6>OUR DOCTORS</h6>
-                <p class="p">Meet Our Amazing Doctors</p> -->
-                <div id="dr-img">
+            <div id="cards">
+                <div class="container">
+                    <div class="hover06 cards">
 
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
     <section id="footer">
@@ -139,7 +140,10 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/js/doctors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/blog.js"></script>
 </body>
 
 </html>

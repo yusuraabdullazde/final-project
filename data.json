@@ -55,6 +55,24 @@
       "first_name": "SEPTEMBER 28, 2023",
       "last_name": "How therapy could become a treatment",
       "image": "./assets/image/medic-showing-bottle-of-pills-to-patient-at-examin-ZEE7GJZ-1024x683.jpg"
+    },
+    {
+      "id": 4,
+      "first_name": "SEPTEMBER 28, 2023",
+      "last_name": "How might carbs & fat affect longevity",
+      "image": "./assets/image/medic-explaining-medication-treatment-JZXN7MK-1024x683.jpg"
+    },
+    {
+      "id": 5,
+      "first_name": "SEPTEMBER 28, 2023",
+      "last_name": "Maintaining stable weight may be hard",
+      "image": "./assets/image/doctor-39-s-day-celebration-happy-smiling-femal-KAJFZJ6-1024x683.jpg"
+    },
+    {
+      "id": 6,
+      "first_name": "SEPTEMBER 28, 2023",
+      "last_name": "What to know about the Blue Zone diet",
+      "image": "./assets/image/cheerful-medics-looking-at-camera-in-clinic-ZUQM8ET-1024x683.jpg"
     }
   ],
   "doctor": [
@@ -216,48 +234,5 @@
       "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     }
   ],
-  "form": [
-    {
-      "first_name": "aydfyuds",
-      "last_name": "n;klijioj[",
-      "email": "yusurea@gmail.com",
-      "password": "1234",
-      "id": 1
-    },
-    {
-      "first_name": "yusura",
-      "last_name": "abdullazade",
-      "email": "yusure2003@gmail.com",
-      "password": "123456",
-      "id": 2
-    },
-    {
-      "first_name": "yusu",
-      "last_name": "abdullazade",
-      "email": "yusure2003@gmail.com",
-      "password": "abdullazae",
-      "id": 3
-    },
-    {
-      "first_name": "aaaa",
-      "last_name": "aaaabb",
-      "email": "yusurea@gmail.com",
-      "password": "1234556",
-      "id": 4
-    },
-    {
-      "first_name": "hhvb",
-      "last_name": "ygfuly",
-      "email": "yusure2003@gmail.com",
-      "password": "12345678",
-      "id": 5
-    },
-    {
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "password": "",
-      "id": 6
-    }
-  ]
+  "form": []
 }

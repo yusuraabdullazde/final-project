@@ -1,5 +1,3 @@
-
-
 (() => {
     'use strict'
     const forms = document.querySelectorAll('.needs-validation')
@@ -20,7 +18,7 @@
   const firstname=document.querySelector("#firstname")
   const lastname=document.querySelector("#lastname")
   const email=document.querySelector("#email")
-  const password=document.querySelector("#password")
+  const select=document.querySelector("#select")
 
   form.addEventListener("submit", (event)=>{
     event.preventDefault();
@@ -29,7 +27,7 @@
         first_name:firstname.value ,
         last_name:lastname.value,
         email:email.value,
-        password:password.value
+        select:select.value
     }
     axios.post("http://localhost:3000/form", obj)
     .then(res=>console.log(res.data))

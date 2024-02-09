@@ -1245,9 +1245,6 @@ nav .nav #menu {
     grid-template-columns: auto;
   }
 }
-#name {
-  padding: 30px 0px;
-}
 #name .name {
   display: flex;
   flex-direction: column;
@@ -1281,7 +1278,7 @@ nav .nav #menu {
   font-size: 45px;
 }
 #services .services .servis-img {
-  width: 1200px;
+  width: 1400px;
   height: 400px;
   position: absolute;
   top: calc((100% - 200px) / 2);
@@ -1343,11 +1340,57 @@ nav .nav #menu {
   align-items: center;
   gap: 8px;
 }
-#services .services #servis-text .servis-elem .elem .blok2 .item i, #services .services #servis-text .servis-elem .elem .blok2 .item p {
+#services .services #servis-text .servis-elem .elem .blok2 .item i,
+#services .services #servis-text .servis-elem .elem .blok2 .item p {
   font-size: 20px;
 }
 #services .services #servis-text .servis-elem .elem .blok2 .item p {
   opacity: 0.7;
+}
+
+#txt-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 160px 0px 50px 0;
+}
+#txt-info .txt-info {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#txt-info .txt-info p {
+  opacity: 0.7;
+}
+#txt-info .txt-info span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #4851d5;
+}
+#txt-info .txt-info h2 {
+  font-size: 45px;
+}
+#txt-info .txt-video {
+  width: 48%;
+  height: 420px;
+  background-image: url("../image/doctors-standing-in-hospital-room-examining-an-x-3YR38KL.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+#txt-info .txt-video i {
+  font-size: 70px;
+  color: white;
+  cursor: pointer;
+}
+#txt-info .txt-video i:hover {
+  color: #4851d5;
+  transition: all 1s ease;
 }
 
 .name-txt {
