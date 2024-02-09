@@ -413,6 +413,18 @@ nav .nav #menu {
 }
 #banner .banner .banner-img {
   width: 55%;
+  height: 570px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1s;
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 #banner .banner .banner-number {
   display: flex;
@@ -432,6 +444,20 @@ nav .nav #menu {
   font-size: 30px;
 }
 
+@keyframes animate {
+  0% {
+    background-image: url("../image/portrait-of-female-doctor-or-nurse-standing-in-hos-PL8M3GM-1.png");
+  }
+  30% {
+    background-image: url("../image/portrait-of-young-woman-doctor-at-hospital-corrido-F8RCC4T-1.png");
+  }
+  70% {
+    background-image: url("../image/portrait-of-happy-doctor-at-hospital-corridor-CX3VSGM-1.png");
+  }
+  100% {
+    background-image: url("../image/group-of-doctors-standing-in-corridor-on-medical-c-5ZHEFZ3.png");
+  }
+}
 @media screen and (max-width: 995px) {
   #banner .banner {
     display: grid;

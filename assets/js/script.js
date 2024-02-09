@@ -93,19 +93,7 @@ window.onscroll = () => {
 }
 
 
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "yusurea@gmail.com",
-        Password: "abdullazade2003",
-        To: 'yusure2003@gmail.com',
-        From: document.querySelector(".email").value,
-        Subject: "New Contact Form Enquiry",
-        Body: "And this is the body"
-    }).then(
-        message => alert(message)
-    );
-}
+
 
 
 const drImg = document.querySelector("#dr-img")

@@ -53,6 +53,18 @@
 
         .banner-img {
             width: 55%;
+            height: 570px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 1s;
+            animation-name: animate;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
         }
 
         .banner-number {
@@ -77,43 +89,68 @@
     }
 }
 
+@keyframes animate {
+    0% {
+        background-image: url("../image/portrait-of-female-doctor-or-nurse-standing-in-hos-PL8M3GM-1.png");
+    }
+
+    30% {
+        background-image: url("../image/portrait-of-young-woman-doctor-at-hospital-corrido-F8RCC4T-1.png");
+    }
+
+    70% {
+        background-image: url("../image/portrait-of-happy-doctor-at-hospital-corridor-CX3VSGM-1.png");
+    }
+
+    100% {
+        background-image: url("../image/group-of-doctors-standing-in-corridor-on-medical-c-5ZHEFZ3.png");
+    }
+}
+
+
 @media screen and (max-width:995px) {
-    #banner{
-        .banner{
-           display: grid;
-          .banner-text{
-            grid-area: 1/ 1/2/3;
-            width: 100% ;
-          }
-          .banner-img{
-            grid-area: 2/ 1/3/2;
-            width: 70%;
-          }
-          .banner-number{
-            grid-area: 2/ 2/ 3/3;
-          }
+    #banner {
+        .banner {
+            display: grid;
+
+            .banner-text {
+                grid-area: 1/ 1/2/3;
+                width: 100%;
+            }
+
+            .banner-img {
+                grid-area: 2/ 1/3/2;
+                width: 70%;
+            }
+
+            .banner-number {
+                grid-area: 2/ 2/ 3/3;
+            }
         }
     }
 }
 
 @media screen and (max-width:680px) {
-    #banner{
-        .banner{
-            .banner-text{
+    #banner {
+        .banner {
+            .banner-text {
                 grid-area: 1/ 1/2/2;
-                width: 100% ;
-              }
-              .banner-img{
+                width: 100%;
+            }
+
+            .banner-img {
                 grid-area: 2/ 1/3/2;
                 width: 70%;
                 justify-content: center;
-              }
-              .banner-number{
+            }
+
+            .banner-number {
                 grid-area: 3/ 1/ 4/2;
-                .one{
+
+                .one {
                     width: 100%;
                 }
-              }
+            }
         }
     }
 }
