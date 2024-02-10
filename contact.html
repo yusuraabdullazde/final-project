@@ -9,8 +9,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
-
-
   <style>
     a {
       text-decoration: none;
@@ -33,7 +31,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
             mattis. </p>
           <div class="form">
-            <form class="row g-3 needs-validation" novalidate class="form">
+            <form class="row g-3 needs-validation" novalidate class="form" onsubmit="sendEmail(event)">
               <input type="hidden" name="access_key" value="46ca0ff7-c2e6-404d-b1a8-d23c03b8f64b">
               <div class="col-md-6">
                 <label for="validationCustom01" class="form-label">First name</label>
@@ -93,8 +91,72 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script>
+    function sendEmail(e) {
+      e.preventDefault()
+     
+     let ebody=`
+     <b>Fist_name</b>${firstname.value}<br>
+     <b>Last_name</b>${lastname.value}<br>
+     <b>Email</b>${email.value}<br>
+     <b>Message</b>${message.value}<br>`
 
-  <script src="./assets/js/contact.js"></script>
+
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "yusurea@gmail.com",
+        Password: "1979B701E4C119E706B4C45598821E5E5754",
+        To: 'yusurea@gmail.com',
+        From: document.querySelector(".email").value,
+        Subject: document.querySelector(".lastname").value,
+        Body: ebody
+      }).then(
+        message => alert(message)
+      );
+      return alert("Email Sendedd")
+    }
+
+
+    
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+
+const form=document.querySelector("form")
+const firstname=document.querySelector(".firstname")
+const lastname=document.querySelector(".lastname")
+const email=document.querySelector(".email")
+const message=document.querySelector(".message")
+const submit=document.getElementsByClassName("form-contact")[0]
+
+form.addEventListener("submit", (event)=>{
+  event.preventDefault();
+  
+  let obj={
+      first_name:firstname.value,
+      last_name:lastname.value,
+      email:email.value,
+      message:message.value
+  }
+  axios.post("http://localhost:3000/form", obj)
+  .then(res=>console.log(res.data))
+  .the
+})
+  </script>
 </body>
 
 </html>

@@ -33,6 +33,7 @@ form.addEventListener("submit", (event)=>{
   }
   axios.post("http://localhost:3000/form", obj)
   .then(res=>console.log(res.data))
+  .the
 })
 
 
