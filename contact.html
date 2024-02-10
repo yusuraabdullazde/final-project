@@ -9,13 +9,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
+
+
   <style>
     a {
       text-decoration: none;
       color: white;
     }
-    
   </style>
+
 </head>
 
 <body>
@@ -31,10 +33,11 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
             mattis. </p>
           <div class="form">
-            <form class="row g-3 needs-validation" novalidate class="form" action="https://formsubmit.co/yusurea@gmail.com" method="POST">
+            <form class="row g-3 needs-validation" novalidate class="form">
+              <input type="hidden" name="access_key" value="46ca0ff7-c2e6-404d-b1a8-d23c03b8f64b">
               <div class="col-md-6">
                 <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" id="firstname" class="form-control" id="validationCustom01" name="name" required>
+                <input type="text" class="form-control firstname" id="validationCustom01" name="firstname" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
@@ -44,7 +47,7 @@
               </div>
               <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Username</label>
-                <input type="text" id="lastname" class="form-control" id="validationCustom02" name="name" required>
+                <input type="text" class="form-control lastname" id="validationCustom02" name="lastname" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
@@ -56,7 +59,7 @@
                 <label for="validationCustomUsername" class="form-label">Email</label>
                 <div class="input-group has-validation">
                   <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  <input type="text" id="email" class="form-control" id="validationCustomUsername"
+                  <input type="text" class="form-control email" id="validationCustomUsername"
                     aria-describedby="inputGroupPrepend" name="email" required>
                   <div class="valid-feedback">
                     Looks good!
@@ -66,19 +69,9 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="col-md-6 position-relative">
-                <label for="validationTooltip04" class="form-label">Specialty</label>
-                <select class="form-select" id="validationTooltip04" required>
-                  <option selected disabled value="">...</option>
-                  <option id="select">...</option>
-                </select>
-                <div class="invalid-tooltip">
-                  Please select a valid state.
-                </div>
-              </div> -->
               <div class="col-md-12">
                 <label for="validationCustom03" class="form-label">Message</label>
-                <textarea id="message" class="form-control" id="validationCustom03" name="message" required></textarea>
+                <textarea class="form-control message" id="validationCustom03 " name="message" required></textarea>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
@@ -87,7 +80,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
+                <button class="btn btn-primary submit" type="submit">Submit form</button>
                 <button class="btn btn-primary close" type="submit"><a href="./index.html">Close form</a></button>
               </div>
             </form>
@@ -100,6 +93,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+
   <script src="./assets/js/contact.js"></script>
 </body>
 

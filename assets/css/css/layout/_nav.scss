@@ -28,7 +28,7 @@ nav {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            // align-items: center;
             gap: 50px;
             margin: 0;
 
@@ -184,18 +184,19 @@ nav {
                 position: fixed;
                 background-color: $color1;
                 flex-direction: column;
-                min-width: 400px;
-                height: 100%;
-                top: 0;
-                left: -400px;
-                padding: 50px;
+                min-height: 400px;
+                width: 100%;
+                left: 0;
+                top: -400px;
+                // padding: 50px ;
                 transform: translate(0%);
+                z-index: 9999;
 
-                li {
-                    a {
-                        color: white;
-                    }
-                }
+                // li {
+                //     a {
+                //         // color: white;
+                //     }
+                // }
 
                 #close {
                     display: block;

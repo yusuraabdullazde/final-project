@@ -9,8 +9,42 @@
             font-size: 45px;
         }
         .collectivimg{
-            width: 1000px;
+            width: 1200px;
             height: 400px;
         }
     }
 }
+@media screen and (max-width:1205px) {
+    #name{
+        .name{
+            .collectivimg{
+                width: 1000px;
+            }
+         
+        }
+    }
+}
+@media screen and (max-width:920px) {
+    #name{
+        .name{
+            .collectivimg{
+                width:800px;
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width:660px) {
+    #name{
+        .name{
+            .collectivimg{
+                width: 500px;
+            }
+             .pageerr{
+                width: 200px;
+             }
+        }
+    }
+}
+

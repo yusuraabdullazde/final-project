@@ -28,3 +28,14 @@ function doctorCard() {
 doctorCard()
 
 
+const menu = document.querySelector(".list")
+const menubtn = document.querySelector("#menu")
+const closebtn = document.querySelector("#close")
+menubtn.addEventListener("click", () => {
+    menu.style.transform = "translateY(100%)"
+    menu.classList.add("active")
+    closebtn.addEventListener("click", () => {
+        menu.style.transform = "translateY(0%)"
+        menu.classList.remove("active")
+    })
+})
