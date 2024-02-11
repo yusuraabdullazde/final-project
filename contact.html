@@ -94,15 +94,17 @@
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
   <script>
+
     function sendEmail(e) {
       e.preventDefault()
-     
-     let ebody=`
-     <b>Fist_name</b>${firstname.value}<br>
-     <b>Last_name</b>${lastname.value}<br>
-     <b>Email</b>${email.value}<br>
-     <b>Message</b>${message.value}<br>`
-
+      let ebody = `
+     <b>Fist_name:</b>${firstname.value}<br>
+     <b>Last_name:</b>${lastname.value}<br>
+     <b>Email:</b>${email.value}<br>
+     <b>Message:</b>${message.value}<br>
+    <a href="http://C:/Users/yusur/OneDrive/Desktop/final-project/okey.html" class="okey" onclick="okey()">OK</a>
+    <a href="no.html" class="no" onclick="no()">NO</a>
+     `
 
       Email.send({
         Host: "smtp.elasticemail.com",
@@ -118,44 +120,56 @@
       return alert("Email Sendedd")
     }
 
+    const ok = document.querySelector(".okey")
+    const no = document.querySelector(".no")
+    function okey() {
+      console.log("salam");
+      ok.addEventListener("click", () => {
+        let arr = pending[pending.length - 1]
+        axios.delete(`http://localhost:3000/pending/${arr}`)
+        window.location.reload();
+        axios.post("http://localhost:3000/accepted")
+          .then(res => console.log(res.data))
+      })
+    }
 
-    
-(() => {
-  'use strict'
-  const forms = document.querySelectorAll('.needs-validation')
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
+
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+
+    const form = document.querySelector("form")
+    const firstname = document.querySelector(".firstname")
+    const lastname = document.querySelector(".lastname")
+    const email = document.querySelector(".email")
+    const message = document.querySelector(".message")
+    const submit = document.getElementsByClassName("form-contact")[0]
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      let obj = {
+        first_name: firstname.value,
+        last_name: lastname.value,
+        email: email.value,
+        message: message.value
       }
+      axios.post("http://localhost:3000/pending", obj)
+        .then(res => console.log(res.data))
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-
-
-const form=document.querySelector("form")
-const firstname=document.querySelector(".firstname")
-const lastname=document.querySelector(".lastname")
-const email=document.querySelector(".email")
-const message=document.querySelector(".message")
-const submit=document.getElementsByClassName("form-contact")[0]
-
-form.addEventListener("submit", (event)=>{
-  event.preventDefault();
-  
-  let obj={
-      first_name:firstname.value,
-      last_name:lastname.value,
-      email:email.value,
-      message:message.value
-  }
-  axios.post("http://localhost:3000/form", obj)
-  .then(res=>console.log(res.data))
-  .the
-})
+    })
   </script>
 </body>
 
