@@ -84,6 +84,10 @@ footer .end {
 #dr-img .dr-img span {
   font-size: 30px;
 }
+#dr-img .dr-img .name {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 1157px) {
   #dr-img {
@@ -1176,14 +1180,16 @@ nav .nav #menu {
   cursor: pointer;
 }
 #blog .blog .cards h3 {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: bold;
 }
 #blog .blog .cards h6 {
   color: #4851d5;
-  font-size: 16px;
+  font-size: 14px;
 }
 #blog .blog .cards p {
   opacity: 0.7;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1200px) {

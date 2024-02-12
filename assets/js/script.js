@@ -117,7 +117,7 @@ function doctorCard() {
                         </a>
                         <i class="bi bi-twitter"></i>
                     </div>
-                        <span>${element.name}</span>
+                        <span class="name">${element.name}</span>
                         <p>${element.pese}</p>
                     </div> `
             })
