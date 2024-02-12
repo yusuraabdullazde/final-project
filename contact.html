@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -24,43 +25,43 @@
 <body>
   <nav>
     <div class="container">
-        <div class="nav">
-            <div class="img">
-                <img src="./assets/image/logo_Asset-1-1.png" alt="">
-            </div>
-            <ul class="list">
-                <div class="close">
-                    <i class="bi bi-x" id="close"></i>
-                </div>
-                <li><a href="./index.html" class="active link">HOME</a></li>
-                <li> <a href="#about" class="link">ABOUT</a></li>
-                <li id="down" ><a href="#services" class="link">SERVICES <i class="bi bi-chevron-down"></i></a>
-                    <ul class="down">
-                        <li><a href="./servis.html">Services</a></li>
-                        <li><a href="./servicesdetail.html">Services Detail</a></li>
-                    </ul>
-                </li>
-                <li><a href="./blog.html" class="link">BLOG</a></li>
-                <li id="down"><a href="#">PAGE<i class="bi bi-chevron-down"></i></a>
-                    <ul class="down">
-                        <li><a href="./doctors.html">Doctors</a></li>
-                        <li><a href="./doctordetail2.html">Doctor Detail</a></li>
-                        <li><a href="./404page.html">404 Page</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="element">
-                <div class="icon-write">
-                    <i class="bi bi-telephone-plus"></i>
-                    <span>Emergency Call</span>
-                </div>
-                <a href="./adminpanel.html" class="button">ADMIN</a>
-            </div>
-            <i class="bi bi-list" id="menu"></i>
+      <div class="nav">
+        <div class="img">
+          <img src="./assets/image/logo_Asset-1-1.png" alt="">
         </div>
+        <ul class="list">
+          <div class="close">
+            <i class="bi bi-x" id="close"></i>
+          </div>
+          <li><a href="./index.html" class="active link">HOME</a></li>
+          <li> <a href="#about" class="link">ABOUT</a></li>
+          <li id="down"><a href="#services" class="link">SERVICES <i class="bi bi-chevron-down"></i></a>
+            <ul class="down">
+              <li><a href="./servis.html">Services</a></li>
+              <li><a href="./servicesdetail.html">Services Detail</a></li>
+            </ul>
+          </li>
+          <li><a href="./blog.html" class="link">BLOG</a></li>
+          <li id="down"><a href="#">PAGE<i class="bi bi-chevron-down"></i></a>
+            <ul class="down">
+              <li><a href="./doctors.html">Doctors</a></li>
+              <li><a href="./doctordetail2.html">Doctor Detail</a></li>
+              <li><a href="./404page.html">404 Page</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="element">
+          <div class="icon-write">
+            <i class="bi bi-telephone-plus"></i>
+            <span>Emergency Call</span>
+          </div>
+          <a href="./adminpanel.html" class="button">ADMIN</a>
+        </div>
+        <i class="bi bi-list" id="menu"></i>
+      </div>
     </div>
-</nav>
+  </nav>
   <section id="appointment">
     <div class="container">
       <div class="appointment">
@@ -157,8 +158,8 @@
      <b>Email:</b>${email.value}<br>
      <b>Doctor:</b>${option.value}<br>
      <b>Message:</b>${message.value}<br>
-    <a href="./okey.html" class="okey" onclick="okey()">OK</a>
-    <a href="no.html" class="no" onclick="no()">NO</a>
+     <a href="file:///C:/Users/LWP102/Desktop/final-project/okey.html" class="okey" onclick="okey()">OK</a>
+     <a href="no.html" class="no" onclick="no()">NO</a>
      `
 
       Email.send({
@@ -168,7 +169,7 @@
         To: 'yusurea@gmail.com',
         From: document.querySelector(".email").value,
         Subject: document.querySelector(".lastname").value,
-        Doctor:document.querySelector("option").value,
+        Doctor: document.querySelector("option").value,
         Body: ebody
       }).then(
         message => alert(message)
@@ -211,7 +212,7 @@
     const lastname = document.querySelector(".lastname")
     const email = document.querySelector(".email")
     const message = document.querySelector(".message")
-    const option=document.querySelector("option")
+    const option = document.querySelector("option")
     const submit = document.getElementsByClassName("form-contact")[0]
 
     form.addEventListener("submit", (event) => {
@@ -221,7 +222,7 @@
         first_name: firstname.value,
         last_name: lastname.value,
         email: email.value,
-        doctor:option.value,
+        doctor: option.value,
         message: message.value
       }
       axios.post("http://localhost:3000/pending", obj)
@@ -229,7 +230,9 @@
 
     })
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
