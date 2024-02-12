@@ -80,7 +80,7 @@
                 justify-content: flex-start;
 
                 .item {
-                    width: 400px;
+                    width: auto;
                 }
             }
         }
@@ -92,14 +92,25 @@
         .card {
             .card-element {
                 .item {
-                    width: 350px;
+                    width: auto;
                 }
 
             }
         }
     }
 }
+@media screen and (max-width:740px) {
+    #card {
+        .card {
+            .card-element {
+                .item {
+                    width: auto;
+                }
 
+            }
+        }
+    }
+}
 @media screen and (max-width:550px) {
     #card {
         .card {
@@ -109,7 +120,9 @@
 
             .card-element {
                 grid-template-columns: auto;
-
+                .item {
+                    width: auto;
+                }
             }
         }
     }

@@ -81,3 +81,15 @@
     }
 }
 
+@media screen and (max-width:625px) {
+    #dr{
+        .dr{
+            flex-direction:column;
+           
+            .dr-img{
+                margin: 0;
+            }
+        }
+    }
+}
+

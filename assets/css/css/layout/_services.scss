@@ -11,7 +11,9 @@
             height: 380px;
             background-color: $color2;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             padding: 50px 0 0 0;
             position: relative;
             text-align: center;

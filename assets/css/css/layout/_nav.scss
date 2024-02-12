@@ -184,19 +184,20 @@ nav {
                 position: fixed;
                 background-color: $color1;
                 flex-direction: column;
-                min-height: 400px;
+                justify-content: flex-start;
+                min-height: 580px;
                 width: 100%;
                 left: 0;
-                top: -400px;
-                // padding: 50px ;
+                top: -580px;
+                padding: 50px;
                 transform: translate(0%);
                 z-index: 9999;
 
-                // li {
-                //     a {
-                //         // color: white;
-                //     }
-                // }
+                li {
+                    a{
+                        color: white;
+                    }
+                }
 
                 #close {
                     display: block;

@@ -137,27 +137,42 @@
     {
       "id": 2,
       "name": "Medical Specialist",
-      "image": "./assets/image/wysiwyg-uploads_1580196666465-doctor.jpg"
+      "image": "./assets/image/wysiwyg-uploads_1580196666465-doctor.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     },
     {
       "id": 3,
       "name": "Medical Checkup",
-      "image": "./assets/image/197_19_ketahui-seputar-manfaat-dan-persiapan-medical-check-up.jpg"
+      "image": "./assets/image/197_19_ketahui-seputar-manfaat-dan-persiapan-medical-check-up.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     },
     {
       "id": 4,
       "name": "Health Consultation",
-      "image": "./assets/image/istockphoto-1319031310-612x612.jpg"
+      "image": "./assets/image/istockphoto-1319031310-612x612.jpg",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     },
     {
       "id": 5,
       "name": "Ambulance Service",
-      "image": "./assets/image/view-from-inside-ambulance-uniformed-emergency-services-workers-caring-patient-stretcher-during-coronavirus-pandemic_657921-1489.avif"
+      "image": "./assets/image/view-from-inside-ambulance-uniformed-emergency-services-workers-caring-patient-stretcher-during-coronavirus-pandemic_657921-1489.avif",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     },
     {
       "id": 6,
       "name": "Health Assurance",
-      "image": "./assets/image/close-up-doctor-with-stethoscope_23-2149191355.avif"
+      "image": "./assets/image/close-up-doctor-with-stethoscope_23-2149191355.avif",
+      "info1": "Pharmacy services aim to achieve the ‘triple aim’:",
+      "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
+      "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     }
   ],
   "drdetail": [
@@ -235,20 +250,7 @@
     }
   ],
   "pending": [
-    {
-      "first_name": "yeni",
-      "last_name": "sdvdikn",
-      "email": "yusurea@gmail.com",
-      "message": "tyyuhb",
-      "id": 1
-    },
-    {
-      "first_name": "hhvb",
-      "last_name": "abdullazade",
-      "email": "yusurea@gmail.com",
-      "message": "ehdgxjxxfxj",
-      "id": 2
-    }
+  
   ],
   "accepted": []
 }

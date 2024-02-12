@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -347,12 +343,17 @@ nav .nav #menu {
     position: fixed;
     background-color: #4851d5;
     flex-direction: column;
-    min-height: 400px;
+    justify-content: flex-start;
+    min-height: 580px;
     width: 100%;
     left: 0;
-    top: -400px;
+    top: -580px;
+    padding: 50px;
     transform: translate(0%);
     z-index: 9999;
+  }
+  nav .nav .list li a {
+    color: white;
   }
   nav .nav .list #close {
     display: block;
@@ -468,7 +469,7 @@ nav .nav #menu {
   }
   #banner .banner .banner-img {
     grid-area: 2/1/3/2;
-    width: 70%;
+    width: 100%;
   }
   #banner .banner .banner-number {
     grid-area: 2/2/3/3;
@@ -481,7 +482,7 @@ nav .nav #menu {
   }
   #banner .banner .banner-img {
     grid-area: 2/1/3/2;
-    width: 70%;
+    width: 100%;
     justify-content: center;
   }
   #banner .banner .banner-number {
@@ -835,7 +836,9 @@ nav .nav #menu {
   height: 380px;
   background-color: #f3f3ff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 50px 0 0 0;
   position: relative;
   text-align: center;
@@ -960,6 +963,14 @@ nav .nav #menu {
     width: 50%;
     bottom: 0px;
     margin: -50px 0;
+  }
+}
+@media screen and (max-width: 625px) {
+  #dr .dr {
+    flex-direction: column;
+  }
+  #dr .dr .dr-img {
+    margin: 0;
   }
 }
 #footer {
@@ -1266,12 +1277,17 @@ nav .nav #menu {
     justify-content: flex-start;
   }
   #card .card .card-element .item {
-    width: 400px;
+    width: auto;
   }
 }
 @media screen and (max-width: 925px) {
   #card .card .card-element .item {
-    width: 350px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 740px) {
+  #card .card .card-element .item {
+    width: auto;
   }
 }
 @media screen and (max-width: 550px) {
@@ -1280,6 +1296,9 @@ nav .nav #menu {
   }
   #card .card .card-element {
     grid-template-columns: auto;
+  }
+  #card .card .card-element .item {
+    width: auto;
   }
 }
 #name .name {
@@ -1324,7 +1343,9 @@ nav .nav #menu {
   height: 380px;
   background-color: #f3f3ff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 50px 0 0 0;
   position: relative;
   text-align: center;

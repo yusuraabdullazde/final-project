@@ -148,18 +148,3 @@ videoicon.addEventListener('click', () => {
 })
 
 
-
-// const button = document.querySelector("button")
-// button.style.backgroundColor="red"
-// function okey() {
-//     console.log("salam");
-//     button.addEventListener("click", () => {
-//         let arr = pending[pending.length - 1]
-//         axios.delete(`http://localhost:3000/pending/${arr}`)
-//         window.location.reload();
-//         axios.post("http://localhost:3000/accepted")
-//             .then(res => console.log(res.data))
-//     })
-// }
-
-

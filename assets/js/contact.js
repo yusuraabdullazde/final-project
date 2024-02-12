@@ -20,6 +20,7 @@ const firstname=document.querySelector(".firstname")
 const lastname=document.querySelector(".lastname")
 const email=document.querySelector(".email")
 const message=document.querySelector(".message")
+const option=document.querySelector("option")
 const submit=document.getElementsByClassName("form-contact")[0]
 
 form.addEventListener("submit", (event)=>{
@@ -29,6 +30,7 @@ form.addEventListener("submit", (event)=>{
       first_name:firstname.value,
       last_name:lastname.value,
       email:email.value,
+      doctor:Option.value,
       message:message.value
   }
   axios.post("http://localhost:3000/form", obj)

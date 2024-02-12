@@ -18,15 +18,13 @@ function Detail() {
             <div class="sekil2">
                 <img src="${element.image}" alt="">
             </div>
-            <p>${element.info1}</p>
+            <h4>${element.info1}</h4>
             <ul>
                 <li> • Better quality of care</li>
                 <li> • Better health outcome</li>
                 <li> • Lower costs</li>
             </ul>
-
-            <p>${element.info2}</p>
-
+            <h4>${element.info2}</h4>
             <p>Core pharmacy services are:</p>
             <ul>
                 <li> • Dispensing (incl. repeat dispensing and homecare);</li>
@@ -36,7 +34,7 @@ function Detail() {
                 </li>
             </ul>
 
-            <p>${element.info3}</p>
+            <h4>${element.info3}</h4>
             <ul>
                 <li> • Vaccination;</li>
                 <li> • Smoking cessation;</li>
