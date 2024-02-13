@@ -1,5 +1,5 @@
 #banner {
-    padding: 40px 0px;
+    padding: 40px 0 0 0;
     background-color: #F3F3FF;
     display: flex;
     justify-content: center;
@@ -16,7 +16,19 @@
             width: 45%;
 
             h1 {
-                font-size: 4vw;
+                font-size: 3.5vw;
+                font-weight: 700;
+            }
+
+            h4 {
+                font-size: 15px;
+                color: $color4;
+                font-weight: 700;
+            }
+
+            p {
+                opacity: .7;
+                font-weight: 400;
             }
 
             div {
@@ -31,29 +43,36 @@
                     width: 150px;
                     padding: 10px 18px;
                     color: white;
-                    border-radius: 25px;
-
-                    &:hover {
-                        transition: all 1s ease;
-                        overflow: hidden;
-                        scale: 1.1;
-                    }
+                    border-radius: 25px;      
                 }
 
                 .button2 {
                     background-color: $color1;
+                    &:hover {
+                        transition: all 1s ease;
+                        background-color: transparent;
+                        border: 2px solid $color1;
+                        color: $color1;
+                    }
                 }
 
                 .button3 {
                     background-color: white;
                     color: gray;
+                    transition: all 1s ease-in;
+
+                    &:hover {
+                        background-color:$color1;
+                        border: 2px solid white;
+                        color: white;
+                    }
                 }
             }
         }
 
         .banner-img {
             width: 55%;
-            height: 570px;
+            height: 590px;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;

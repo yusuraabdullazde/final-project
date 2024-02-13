@@ -22,10 +22,6 @@ a {
   text-decoration: none;
 }
 
-li.active {
-  background-color: #4CAF50;
-}
-
 footer {
   padding: 30px 0px;
   background-color: #4851d5;
@@ -45,7 +41,7 @@ footer .end {
 }
 #dr-img .dr-img {
   position: relative;
-  width: 290px;
+  max-width: 290px;
 }
 #dr-img .dr-img:hover {
   transition: all 1s ease;
@@ -295,6 +291,9 @@ nav .nav .list li a:hover .down {
 nav .nav .list li a:hover i {
   color: black;
 }
+nav .nav .list li a.active {
+  color: black;
+}
 nav .nav .element {
   display: flex;
   justify-content: space-around;
@@ -370,7 +369,7 @@ nav .nav #menu {
   }
 }
 #banner {
-  padding: 40px 0px;
+  padding: 40px 0 0 0;
   background-color: #F3F3FF;
   display: flex;
   justify-content: center;
@@ -387,7 +386,17 @@ nav .nav #menu {
   width: 45%;
 }
 #banner .banner .banner-text h1 {
-  font-size: 4vw;
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+#banner .banner .banner-text h4 {
+  font-size: 15px;
+  color: rgb(72, 81, 213);
+  font-weight: 700;
+}
+#banner .banner .banner-text p {
+  opacity: 0.7;
+  font-weight: 400;
 }
 #banner .banner .banner-text div {
   display: flex;
@@ -403,22 +412,28 @@ nav .nav #menu {
   color: white;
   border-radius: 25px;
 }
-#banner .banner .banner-text div .button2:hover,
-#banner .banner .banner-text div .button3:hover {
-  transition: all 1s ease;
-  overflow: hidden;
-  scale: 1.1;
-}
 #banner .banner .banner-text div .button2 {
   background-color: #4851d5;
+}
+#banner .banner .banner-text div .button2:hover {
+  transition: all 1s ease;
+  background-color: transparent;
+  border: 2px solid #4851d5;
+  color: #4851d5;
 }
 #banner .banner .banner-text div .button3 {
   background-color: white;
   color: gray;
+  transition: all 1s ease-in;
+}
+#banner .banner .banner-text div .button3:hover {
+  background-color: #4851d5;
+  border: 2px solid white;
+  color: white;
 }
 #banner .banner .banner-img {
   width: 55%;
-  height: 570px;
+  height: 590px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -616,7 +631,8 @@ nav .nav #menu {
 }
 #about .about .about-text h4 {
   font-size: 15px;
-  color: #4851d5;
+  color: rgb(72, 81, 213);
+  font-weight: 700;
 }
 #about .about .about-text h2 {
   font-size: 3vw;
@@ -719,10 +735,16 @@ nav .nav #menu {
 }
 #help .help .help-text h4 {
   font-size: 15px;
-  color: #4851d5;
+  color: rgb(72, 81, 213);
+  font-weight: 700;
 }
 #help .help .help-text h2 {
   font-size: 3vw;
+  font-weight: bold;
+}
+#help .help .help-text .lorem {
+  opacity: 0.7;
+  font-size: 16px;
 }
 #help .help .help-text .txt2 {
   display: flex;
@@ -834,6 +856,14 @@ nav .nav #menu {
   align-items: center;
   gap: 30px;
 }
+#doctor .doctor h6 {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(72, 81, 213);
+}
+#doctor .doctor h2 {
+  font-weight: bold;
+}
 
 #name .name .basliq {
   width: 100%;
@@ -863,10 +893,16 @@ nav .nav #menu {
 #name .name .name-txt {
   padding: 200px 0 50px 0;
 }
+#name .name #cards .cards .card {
+  max-width: 400px;
+}
 
 @media screen and (max-width: 1205px) {
   #name .name .collectivimg {
     width: 1000px;
+  }
+  #name .name #cards .cards {
+    grid-template-columns: repeat(2, auto);
   }
 }
 @media screen and (max-width: 950px) {
@@ -889,6 +925,9 @@ nav .nav #menu {
 @media screen and (max-width: 660px) {
   #name .name .collectivimg {
     width: 500px;
+  }
+  #name .name #cards .cards {
+    grid-template-columns: auto;
   }
 }
 @media screen and (max-width: 400px) {
@@ -934,12 +973,6 @@ nav .nav #menu {
   color: white;
   border-radius: 25px;
 }
-#dr .dr .dr-text div .button2:hover,
-#dr .dr .dr-text div .button3:hover {
-  transition: all 1s ease;
-  overflow: hidden;
-  scale: 1.1;
-}
 #dr .dr .dr-text div .button2 {
   background-color: white;
   color: black;
@@ -969,12 +1002,12 @@ nav .nav #menu {
     margin: -50px 0;
   }
 }
-@media screen and (max-width: 625px) {
-  #dr .dr {
-    flex-direction: column;
+@media screen and (max-width: 665px) {
+  #dr .dr .dr-text {
+    width: 100%;
   }
   #dr .dr .dr-img {
-    margin: 0;
+    display: none;
   }
 }
 #footer {
@@ -1121,6 +1154,18 @@ nav .nav #menu {
   justify-content: center;
   flex-direction: column;
 }
+#accordion .accordion .accordion-text h6 {
+  font-size: 15px;
+  color: rgb(72, 81, 213);
+  font-weight: 700;
+}
+#accordion .accordion .accordion-text h2 {
+  font-weight: bold;
+}
+#accordion .accordion .accordion-text p {
+  opacity: 0.7;
+  font-size: 16px;
+}
 #accordion .accordion .accordion-text .text {
   display: flex;
   flex-direction: column;
@@ -1224,9 +1269,10 @@ nav .nav #menu {
 }
 #card .card h2 {
   font-size: 3.5vw;
+  font-weight: bold;
 }
 #card .card h6 {
-  color: #4851d5;
+  color: rgb(72, 81, 213);
   font-weight: bold;
 }
 #card .card .card-element {
@@ -1281,27 +1327,6 @@ nav .nav #menu {
   #card .card .card-element {
     grid-template-columns: repeat(2, auto);
     justify-content: flex-start;
-  }
-  #card .card .card-element .item {
-    width: auto;
-  }
-}
-@media screen and (max-width: 925px) {
-  #card .card .card-element .item {
-    width: auto;
-  }
-}
-@media screen and (max-width: 740px) {
-  #card .card .card-element .item {
-    width: auto;
-  }
-}
-@media screen and (max-width: 550px) {
-  #card .card h2 {
-    font-size: 30px;
-  }
-  #card .card .card-element {
-    grid-template-columns: auto;
   }
   #card .card .card-element .item {
     width: auto;
@@ -1571,36 +1596,90 @@ nav .nav #menu {
   height: 100vh;
 }
 
-section #okey {
+#form-box {
+  background-color: red;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 102, 0.6), rgba(0, 0, 102, 0.6)), url("../image/cheerful-medics-looking-at-camera-in-clinic-ZUQM8ET-1024x683.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-section #okey .okey {
-  width: 400px;
-  height: 400px;
-  background-color: #4851d5;
+#form-box .form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+#form-box .form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #3c00a0;
+  position: relative;
+}
+#form-box .form-box h1::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  position: absolute;
+  background: #3c00a0;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#form-box .form-box .input-group {
+  height: 260px;
+}
+#form-box .form-box .input-group .input-field {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+#form-box .form-box .input-group .input-field input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 18px 15px;
+}
+#form-box .form-box .input-group .input-field i {
+  margin-left: 15px;
+  color: #999;
+}
+#form-box .form-box .input-group p {
+  text-align: left;
+  font-size: 13px;
+}
+#form-box .form-box .input-group p a {
+  color: #3c00a0;
+}
+#form-box .form-box .btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#form-box .form-box .btn-field button {
+  flex-basis: 48%;
+  background-color: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  color: white;
+  transition: background 1s;
 }
-section #okey .okey i {
-  font-size: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section #okey .okey button {
-  width: 150px;
-  padding: 15px 0px;
-  background-color: rgb(139, 145, 248);
-  color: white;
-  font-size: 20px;
-  border: 2px dashed white;
-  border-radius: 15px;
+#form-box .form-box .btn-field button.disabled {
+  background-color: #eaeaea;
+  color: #555;
 }/*# sourceMappingURL=style.css.map */

@@ -66,8 +66,12 @@
                             <th>First Name:</th>
                             <th>Last Name:</th>
                             <th>Email:</th>
-                            <th>Delete:</th>
-                            <th>Edit:</th>
+                            <th>Cancel:</th>
+                            <th>Add:</th>
+                            <th>
+                                Edit:
+                                Delete:
+                            </th>
                         </tr>
                     </table>
                 </div>
@@ -117,10 +121,14 @@
         <td>${element.last_name}</td>
         <td>${element.email}</td>
         <td>
-            <i class="bi bi-trash3-fill" onclick="deletefunk(${element.id})"></i>
+            <button onclick="cancel(${element.id})">Cancel</button>
+         </td>
+        <td>
+            <button onclick="add(${element.id})">Add</button>
         </td>
         <td>
             <i class="bi bi-pencil-fill" onclick="updatefunc(${element.id})"></i>
+            <i class="bi bi-trash3-fill" onclick="deletefunk(${element.id})"></i>
         </td>
     </tr>`
                 });
@@ -185,7 +193,7 @@
         }
 
         const count = document.querySelector(".count")
-
+        // document.write(localStorage.setItem("first_name"))
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

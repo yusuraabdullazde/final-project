@@ -12,11 +12,15 @@ function doctorCard() {
                                 alt="">
                         </div>
                         <div class="none">
+                        <a href="https://facebook.com">
                         <i class="bi bi-facebook"></i>
+                        </a>
                         <a href="./doctordetail.html?id=${element.id}">
                         <i class="bi bi-info-circle"></i>
                         </a>
+                        <a href="https://twitter.com">
                         <i class="bi bi-twitter"></i>
+                        </a>
                     </div>
                         <span>${element.name}</span>
                         <p>${element.pese}</p>

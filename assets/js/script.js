@@ -74,24 +74,11 @@ function myCard() {
 myCard()
 
 
-const li = document.querySelectorAll(".list li a")
-const section = document.querySelectorAll("section")
+const li = document.querySelector("li a")
+li.addEventListener("click", ()=>{
+    li.classList.add("active")
+})
 
-window.onscroll = () => {
-    section.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute("id");
-
-        if (top >= offset && top < offset + height) {
-            li.forEach(links => {
-                links.classList.remove("active")
-                document.querySelector('.list li a [href*=" + id + "]').classList.add("active")
-            })
-        }
-    })
-}
 
 
 
@@ -111,11 +98,15 @@ function doctorCard() {
                                 alt="">
                         </div>
                         <div class="none">
+                        <a href="https://facebook.com">
                         <i class="bi bi-facebook"></i>
+                        </a>
                         <a href="./doctordetail.html?id=${element.id}">
                         <i class="bi bi-info-circle"></i>
                         </a>
+                        <a href="https://twitter.com">
                         <i class="bi bi-twitter"></i>
+                        </a>
                     </div>
                         <span class="name">${element.name}</span>
                         <p>${element.pese}</p>

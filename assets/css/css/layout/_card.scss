@@ -9,10 +9,11 @@
 
         h2 {
             font-size: $fontSize2;
+            font-weight: bold;
         }
 
         h6 {
-            color: $color1;
+            color: $color4;
             font-weight: bold;
         }
 
@@ -87,45 +88,5 @@
     }
 }
 
-@media screen and (max-width:925px) {
-    #card {
-        .card {
-            .card-element {
-                .item {
-                    width: auto;
-                }
-
-            }
-        }
-    }
-}
-@media screen and (max-width:740px) {
-    #card {
-        .card {
-            .card-element {
-                .item {
-                    width: auto;
-                }
-
-            }
-        }
-    }
-}
-@media screen and (max-width:550px) {
-    #card {
-        .card {
-            h2 {
-                font-size: 30px;
-            }
-
-            .card-element {
-                grid-template-columns: auto;
-                .item {
-                    width: auto;
-                }
-            }
-        }
-    }
-}
 
 

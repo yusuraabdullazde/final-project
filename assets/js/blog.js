@@ -5,7 +5,7 @@ function myCard() {
         .then(data => {
             data.forEach(elem => {
                 card2.innerHTML += `
-                <div class="card" style="width:25rem">
+                <div class="card">
                             <img src="${elem.image}"
                                 class="card-img-top" alt="...">
                             <div class="card-body">

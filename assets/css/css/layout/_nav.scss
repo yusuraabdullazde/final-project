@@ -28,7 +28,6 @@ nav {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
-            // align-items: center;
             gap: 50px;
             margin: 0;
 
@@ -50,7 +49,6 @@ nav {
 
                 .down {
                     background-color: white;
-                    // display: none;
                     width: 150px;
                     line-height: 30px;
                     padding: 10px 0;
@@ -78,7 +76,6 @@ nav {
 
 
             li {
-                // float: left;
                 position: relative;
                 width: auto;
 
@@ -111,6 +108,10 @@ nav {
                         }
                     }
                 }
+                a.active{
+                    color: black;
+                }
+
             }
 
         }
