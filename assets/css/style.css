@@ -121,6 +121,10 @@ footer .end {
   list-style-type: none;
   cursor: pointer;
 }
+#footer .footer .footer-one .item li:hover, #footer .footer .footer-one .item li a :hover {
+  color: white;
+  transition: all 1s ease;
+}
 #footer .footer .footer-one .item .icons {
   display: flex;
   gap: 10px;
@@ -357,6 +361,7 @@ nav .nav #menu {
   }
   nav .nav .list li a {
     color: white;
+    font-size: 18px;
   }
   nav .nav .list #close {
     display: block;
@@ -871,7 +876,7 @@ nav .nav #menu {
   background-color: #f3f3ff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 50px 0 0 0;
   position: relative;
@@ -880,27 +885,52 @@ nav .nav #menu {
 #name .name .basliq h2 {
   font-size: 45px;
 }
-#name .name .collectivimg {
-  width: 1200px;
-  height: 400px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#name .name #all-blog .all-blog {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+#name .name #all-blog .all-blog .blog-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#name .name #all-blog .all-blog .blog-text > div {
+  padding: 0 0 0 10px;
+  width: 350px;
+  height: 80px;
+  background-color: #f3f3ff;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: center;
+  border-radius: 20px;
+}
+#name .name #all-blog .all-blog .blog-text > div .info-img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+#name .name #all-blog .all-blog .blog-text > div .info-img img {
+  border-radius: 50%;
+}
+#name .name #all-blog .all-blog .blog-text > div h4 {
+  cursor: pointer;
+}
+#name .name #all-blog .all-blog .blog-text > div h4 a {
+  color: black;
+  transition: all 1s ease;
+}
+#name .name #all-blog .all-blog .blog-text > div h4 a:hover {
+  color: #4851d5;
+}
+#name .name #all-blog .all-blog .blog-text > div h4:hover {
+  color: #4851d5;
 }
 #name .name .name-txt {
-  padding: 200px 0 50px 0;
-}
-#name .name #cards .cards .card {
-  max-width: 400px;
+  padding: 50px 0;
 }
 
 @media screen and (max-width: 1205px) {
-  #name .name .collectivimg {
-    width: 1000px;
-  }
   #name .name #cards .cards {
     grid-template-columns: repeat(2, auto);
   }
@@ -920,6 +950,11 @@ nav .nav #menu {
 @media screen and (max-width: 920px) {
   #name .name .collectivimg {
     width: 800px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #all-blog .all-blog {
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 660px) {
@@ -1342,25 +1377,8 @@ nav .nav #menu {
 #name .name h1 {
   font-size: 45px;
 }
-#name .name .collectivimg {
-  width: 1200px;
-  height: 400px;
-}
 
-@media screen and (max-width: 1205px) {
-  #name .name .collectivimg {
-    width: 1000px;
-  }
-}
-@media screen and (max-width: 920px) {
-  #name .name .collectivimg {
-    width: 800px;
-  }
-}
 @media screen and (max-width: 660px) {
-  #name .name .collectivimg {
-    width: 500px;
-  }
   #name .name .pageerr {
     width: 200px;
   }
@@ -1605,14 +1623,18 @@ nav .nav #menu {
   background-size: cover;
 }
 #form-box .form-box {
-  width: 90%;
-  max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 800px;
+  max-width: 800px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
-  padding: 50px 60px 70px;
+  padding: 50px 60px;
   text-align: center;
 }
 #form-box .form-box h1 {
@@ -1650,7 +1672,7 @@ nav .nav #menu {
   border: 0;
   outline: 0;
   background-color: transparent;
-  padding: 18px 15px;
+  padding: 18px 50px;
 }
 #form-box .form-box .input-group .input-field i {
   margin-left: 15px;
@@ -1677,9 +1699,4 @@ nav .nav #menu {
   outline: 0;
   cursor: pointer;
   border-radius: 20px;
-  transition: background 1s;
-}
-#form-box .form-box .btn-field button.disabled {
-  background-color: #eaeaea;
-  color: #555;
 }/*# sourceMappingURL=style.css.map */

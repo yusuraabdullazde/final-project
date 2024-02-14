@@ -80,49 +80,97 @@
       "id": 1,
       "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
       "name": "Dr.James Samuels",
-      "pese": "Pediatrics"
+      "pese": "Pediatrics",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     },
     {
       "id": 2,
       "image": "./assets/image/portrait-of-young-woman-doctor-at-hospital-corrido2-F8RCC4T.jpg",
       "name": "Dr. Lanna Wattson",
-      "pese": "Psychiatry"
+      "pese": "Psychiatry",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     },
     {
       "id": 3,
       "image": "./assets/image/portrait-of-happy-doctor-at-hospital-corridor2-CX3VSGM.jpg",
       "name": "Dr.Martin Franses",
-      "pese": "Cardiology"
+      "pese": "Cardiology",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     },
     {
       "id": 4,
       "image": "./assets/image/portrait-of-female-doctor-or-nurse-standing-in-hos-J37Z55D.jpg",
       "name": "Dr.Lara Houston",
-      "pese": "Orthopedics"
+      "pese": "Orthopedics",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     },
     {
       "id": 5,
       "image": "./assets/image/portrait-of-young-woman-doctor-with-rescuers-in-ba2-FLP5ZUQ (1).jpg",
       "name": "Dr. Lucy Wildes",
-      "pese": "Pediatrics"
+      "pese": "Pediatrics",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     },
     {
       "id": 6,
       "image": "./assets/image/group-of-doctors-on-conference-medical-team-sitti-HHUBV78.jpg",
       "name": "Dr.Amanda Sherman",
-      "pese": "Psychiatry"
+      "pese": "Psychiatry",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     },
     {
       "id": 7,
-      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
+      "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c2-5NQGMQB.jpg",
       "name": "Dr.Pepper Hills",
-      "pese": "Cardiology"
+      "pese": "Cardiology",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     },
     {
       "id": 8,
       "image": "./assets/image/senior-doctor-with-smartwatch-in-office-P6PMM7R.jpg",
       "name": "Dr.John Lawson",
-      "pese": "Orthopedics"
+      "pese": "Orthopedics",
+      "type": [
+        {
+          "pending": [],
+          "accepted": []
+        }
+      ]
     }
   ],
   "detail": [
@@ -248,22 +296,4 @@
       "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
       "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     }
-  ],
-  "pending": [
-    {
-      "first_name": "yuuu",
-      "last_name": "yuu",
-      "email": "yusurea@gmail.com",
-      "doctor": "Dr.James Samuels",
-      "message": "zfgdfhgy",
-      "id": 2
-    },
-    {
-      "first_name": "yusura",
-      "email": "yusuraa",
-      "password": "123456",
-      "id": 3
-    }
-  ],
-  "accepted": []
-}
+  ]}

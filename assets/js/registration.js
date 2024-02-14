@@ -1,62 +1,44 @@
-const signupbtn = document.querySelector("#signupBtn")
-const signinbtn = document.querySelector("#signinBtn")
-const nameField = document.querySelector("#nameField")
-const title = document.querySelector("#title")
+let signup = document.querySelector("#register")
+let signin = document.querySelector("#login");
+signup.addEventListener("click", () => {
+    let signame = document.querySelector(".sfirstname");
+    let signemail = document.querySelector(".semail");
+    let signpassword = document.querySelector(".spassword");
 
-// signinbtn.addEventListener("click", () => {
-//     nameField.style.maxHeight = "0";
-//     title.innerHTML = "Sign In"
-//     signupbtn.classList.add("disabled")
-//     signinbtn.classList.remove("disabled")
-// })
-
-// signupbtn.addEventListener("click", () => {
-//     nameField.style.maxHeight = "60px";
-//     title.innerHTML = "Sign Up"
-//     signupbtn.classList.remove("disabled")
-//     signinbtn.classList.add("disabled")
-// })
-
-// const firstname = document.querySelector(".firstname")
-// const email = document.querySelector(".email")
-// const password = document.querySelector(".password")
-// signupbtn.addEventListener("click", function () {
-//     if (email !== "" && firstname !== "" && password !== "") {
-//         axios.post("http://localhost:3000/pending", {
-//             first_name: firstname.value,
-//             email: email.value,
-//             password: password.value
-//         })
-//             .then(res => console.log(res.data))
-//     }
-// })
-
-
-function saveData() {
-    const firstname = document.querySelector(".firstname").value;
-    const email = document.querySelector(".email").value;
-    const password = document.querySelector(".password").value;
-    // localStorage.setItem("first_name", firstname);
-    // localStorage.setItem("email", email);
-    // localStorage.setItem("password", password);
-
-
-    let user_records = new Array()
-    user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
-    if (user_records.some((v) => {
-        return v.email == email
-    })) {
-        alert("duplicat")
+    if (signame.value.trim() && signemail.value.trim() && signpassword.value.trim()) {
+        axios.post("http://localhost:3000/doctor", {
+           first_name: signame.value,
+            email: signemail.value,
+            password: signpassword.value,
+            pending:[],
+            accepted:[]
+        })
+        .then(res=>console.log(res.data))
 
     } else {
-        user_records.push({
-            "first_name": firstname,
-            "email": email,
-            "password": password
-        })
-        localStorage.setItem("users", JSON.stringify(user_records))
+        alert("bosdu")
     }
+});
+let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null;
 
-}
-
-saveData()
+signin.addEventListener("click", (e) => {
+    e.preventDefault()
+    let loginemail = document.querySelector(".lemail").value;
+    let loginpassword = document.querySelector(".lpassword").value;
+    fetch('http://localhost:3000/doctor')
+    .then(res=>res.json())
+      .then(data => {
+        console.log(data);
+        let currentUserInfo = data.find((user)=>user.email == loginemail)
+        if(currentUserInfo){
+            if(currentUserInfo.password == loginpassword){
+                localStorage.setItem('currentUser', JSON.stringify(currentUserInfo));
+                window.location = './index.html'
+            }else{
+                alert("no pasword")
+            }      
+        }else{
+           alert("no name")
+        }
+      })
+})

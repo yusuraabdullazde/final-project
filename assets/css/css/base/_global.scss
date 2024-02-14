@@ -154,7 +154,10 @@ footer {
                     list-style-type: none;
                     cursor: pointer;
                 }
-
+               li:hover, li a :hover{
+                color: white;
+                transition:all 1s ease;
+               }
                 .icons {
                     display: flex;
                     gap: 10px;
@@ -278,3 +281,5 @@ footer {
         }
     }
 }
+
+

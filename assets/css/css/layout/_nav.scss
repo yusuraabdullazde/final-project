@@ -2,8 +2,6 @@ nav {
     padding: 15px 0px;
     border-bottom: 1px solid gray;
 
-
-
     .nav {
         display: flex;
         justify-content: space-between;
@@ -108,7 +106,8 @@ nav {
                         }
                     }
                 }
-                a.active{
+
+                a.active {
                     color: black;
                 }
 
@@ -195,8 +194,9 @@ nav {
                 z-index: 9999;
 
                 li {
-                    a{
+                    a {
                         color: white;
+                        font-size: 18px;
                     }
                 }
 

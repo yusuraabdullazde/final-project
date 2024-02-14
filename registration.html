@@ -9,31 +9,51 @@
 </head>
 <body>
     <div id="form-box">
-        <div class="container">
-            <div class="form-box">
-                <h1 id="title">Sign up</h1>
-                <form>
-                    <div class="input-group">
-                        <div class="input-field" id="nameField">
-                            <i class="bi bi-person-fill"></i>
-                            <input type="text" placeholder="First Name" class="firstname">
+        <div class="container" id="container">
+              <div class="form-box">
+                <div class="signup-cont">
+                    <h1 id="title">Sign up</h1>
+                    <form>
+                        <div class="input-group">
+                            <div class="input-field" id="nameField">
+                                <i class="bi bi-person-fill"></i>
+                                <input type="text" placeholder="First Name" class="sfirstname">
+                            </div>
+                            <div class="input-field">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" placeholder="Email" class="semail">
+                            </div>
+                            <div class="input-field">
+                                <i class="bi bi-key"></i>
+                                <input type="password" placeholder="Password" class="spassword">
+                            </div>
+                            <p>Lost Password <a href="#">Click Here!</a></p>
                         </div>
-                        <div class="input-field">
-                            <i class="bi bi-envelope"></i>
-                            <input type="email" placeholder="Email" class="email">
+                        <div class="btn-field">
+                            <button type="button" id="register">Sign up</button>
                         </div>
-                        <div class="input-field">
-                            <i class="bi bi-key"></i>
-                            <input type="password" placeholder="Password" class="password">
+                    </form>
+                </div>
+                <div class="signin-cont">
+                    <h1 id="title">Sign in</h1>
+                    <form>
+                        <div class="input-group">
+                            <div class="input-field">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" placeholder="Email" class="email">
+                            </div>
+                            <div class="input-field">
+                                <i class="bi bi-key"></i>
+                                <input type="password" placeholder="Password" class="password">
+                            </div>
+                            <p>Lost Password <a href="#">Click Here!</a></p>
                         </div>
-                        <p>Lost Password <a href="#">Click Here!</a></p>
-                    </div>
-                    <div class="btn-field">
-                        <button type="button" id="signupBtn" onclick="saveData()">Sign up</button>
-                        <!-- <button type="button" class="disabled" id="signinBtn"><a href="./login.html">Sign in</a></button> -->
-                    </div>
-                </form>
-            </div>
+                        <div class="btn-field">
+                            <button type="button" id="login" >Sign in</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
