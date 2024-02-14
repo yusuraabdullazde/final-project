@@ -30,12 +30,33 @@ form.addEventListener("submit", (event)=>{
       first_name:firstname.value,
       last_name:lastname.value,
       email:email.value,
-      doctor:Option.value,
       message:message.value
   }
-  axios.post("http://localhost:3000/form", obj)
-  .then(res=>console.log(res.data))
-  .the
+  axios.get('http://localhost:3000/account')
+  .then(res => res.data)
+  .then(data => {
+    const id= data.find(f => f.first_name==option.value)
+    if(id) {
+      console.log(id);
+      let y = id.type
+      console.log(y);
+      y.pending.push(obj)
+      console.log(y);
+      axios.patch('http://localhost:3000/account/'+id.id, {type:y})
+    }
+  })
+  axios.get('http://localhost:3000/myaccount')
+  .then(res => res.data)
+  .then(data => {
+    const ids= data.find(f => f.first_name==option.value)
+    if(ids) {
+      console.log(obj);
+      yx = ids.type 
+      yx.pending.push(obj)
+      console.log(yx);
+      axios.patch('http://localhost:3000/myaccount/'+ids.id, {type:yx})
+    }
+  })
 })
 
 

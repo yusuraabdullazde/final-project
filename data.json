@@ -75,6 +75,56 @@
       "image": "./assets/image/cheerful-medics-looking-at-camera-in-clinic-ZUQM8ET-1024x683.jpg"
     }
   ],
+  "account": [
+    {
+      "first_name": "Dr.James Samuels",
+      "email": "ee",
+      "password": "eee",
+      "type": {
+        "pending": [
+          {
+            "first_name": "jhjfs",
+            "last_name": "jhjfs",
+            "email": "jhjfs",
+            "message": "ruewgrug"
+          },
+          {
+            "first_name": "jhjfs",
+            "last_name": "jhjfs",
+            "email": "jhjfs",
+            "message": "ruewgrug"
+          },
+          {
+            "first_name": "jhjfs",
+            "last_name": "jhjfs",
+            "email": "jhjfs",
+            "message": "ruewgrug"
+          }
+        ],
+        "accepted": []
+      },
+      "id": 1
+    }
+  ],
+  "myaccount": [
+    {
+      "first_name": "Dr.James Samuels",
+      "email": "ee",
+      "password": "eee",
+      "type": {
+        "pending": [
+          {
+            "first_name": "jhjfs",
+            "last_name": "jhjfs",
+            "email": "jdfshjfs",
+            "message": "ruewgrug"
+          }
+        ],
+        "accepted": []
+      },
+      "id": 1
+    }
+  ],
   "doctor": [
     {
       "id": 1,
@@ -171,6 +221,14 @@
           "accepted": []
         }
       ]
+    },
+    {
+      "first_name": "yusura",
+      "email": "yusura@gmail.com",
+      "password": "067234632",
+      "pending": [],
+      "accepted": [],
+      "id": 9
     }
   ],
   "detail": [
@@ -296,4 +354,5 @@
       "info2": " If we look at the main trends in pharmacy services we observe that the number ofpatient-centered services is increasing.",
       "info3": " Over the past decade we are also seeing an increase number of advanced pharmaceutical careservices offered to patients, such as :"
     }
-  ]}
+  ]
+}

@@ -32,7 +32,7 @@
             <div class="col-div-6">
                 <div class="profile">
                     <img src="./assets/image/download.png" class="pro-img" />
-                    <p>Yusura Abdullazade</p>
+                    <p></p>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -43,7 +43,7 @@
 
         <div class="col-div-3">
             <div class="box">
-                <p class="count">0 <br/><span>Customers</span></p>
+                <p class="count">0 <br /><span>Customers</span></p>
                 <i class="fa fa-users box-icon"></i>
             </div>
         </div>
@@ -107,35 +107,72 @@
         const email = document.querySelector(".email")
         const message = document.querySelector(".message")
         const table = document.querySelector("table")
+        const profile = document.querySelector(".profile p")
 
-        fetch("http://localhost:3000/pending")
+        let say = 0;
+        fetch("http://localhost:3000/myaccount")
+
             .then(res => res.json())
             .then(data => {
-                count.innerHTML=`${data.length}<br><span>Customers</span>`
-                console.log("salam");
-                data.forEach(element => {
+                say++
+                profile.innerText = data[0].first_name
+                count.innerHTML = `${data[0].type.pending.length}<br><span>Customers</span>`
+                console.log(data[0].type.pending);
+                y = data[0].type.pending
+                data[0].type.pending.forEach(element => {
                     table.innerHTML += `
         <tr>
-        <td>${element.id}</td>
-        <td>${element.first_name}</td>
-        <td>${element.last_name}</td>
-        <td>${element.email}</td>
+        <td>${say++}</td>
+        <td >${element.first_name}</td>
+        <td >${element.last_name}</td>
+        <td class='salam salam${say}'> ${element.email}</td>
         <td>
-            <button onclick="cancel(${element.id})">Cancel</button>
-         </td>
-        <td>
-            <button onclick="add(${element.id})">Add</button>
+            <button onclick="cancel(${say})">Cancel</button>
         </td>
         <td>
-            <i class="bi bi-pencil-fill" onclick="updatefunc(${element.id})"></i>
-            <i class="bi bi-trash3-fill" onclick="deletefunk(${element.id})"></i>
+            <button onclick="add(${say})">Add</button>
+        </td>
+        <td>
+            <i class="bi bi-pencil-fill" onclick="updatefunc(${say})"></i>
+            <i class="bi bi-trash3-fill" onclick="deletefunk(${say})"></i>
         </td>
     </tr>`
-                });
+                })
+
+
             })
         function deletefunk(id) {
-            axios.delete(`http://localhost:3000/pending/${id}`)
-            window.location.reload()
+            const salam = document.querySelector(`.salam${id}`)
+            console.log(salam);
+            axios.get(`http://localhost:3000/myaccount/`)
+                .then(res => res.data)
+                .then(data => {
+                    // x = .forEach(data => {
+                    // salam.forEach(s => {
+                        const id = data[0].type.pending.find((f) => f.email == salam.innerText)
+                        if (id) {
+                            console.log(id);
+                            console.log("dfsdfg");
+                            boyuktype=data[0].type.accepted
+                            index = data[0].type.pending.indexOf(id)
+                            console.log(index);
+                            if(index!=0){
+                                teze1=data[0].type.pending.slice(0,index)
+                                teze2= data[0].type.pending.slice(index+1)
+                                teze= teze1.concat(teze2)
+                                console.log(teze, data[0].type.pending.slice(0,index));
+
+                                
+                            }else{
+                               teze=data[0].type.pending.slice(index) 
+                            }
+                            axios.patch(`http://localhost:3000/myaccount/`+ data[0].id, {type :{
+                                    pending:teze,
+                                    accepted:boyuktype
+                                }})
+                                window.location.reload()
+                        }
+                    })
         }
 
 
