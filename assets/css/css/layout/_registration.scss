@@ -1,5 +1,4 @@
 #form-box {
-    background-color: red;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 102, 0.6), rgba(0, 0, 102, 0.6)), url("../image/cheerful-medics-looking-at-camera-in-clinic-ZUQM8ET-1024x683.jpg");
     background-position: center;
@@ -18,8 +17,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background: #fff;
-        padding: 50px 60px ;
+        padding: 50px 60px;
         text-align: center;
+
+        .signup-cont {
+            border-right: 2px dashed $color1;
+            padding-right: 45px;
+        }
 
         h1 {
             font-size: 30px;
@@ -95,4 +99,31 @@
         }
     }
 
+}
+
+@media screen and (max-width:850px) {
+    #form-box {
+        padding: 40px 0px;
+
+        .form-box {
+            flex-direction: column;
+            justify-content: flex-start;
+            max-width: 500px;
+            padding: 30px 16px;
+
+            .signup-cont {
+                border-right: none;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    #form-box {
+        .form-box {
+            max-width: 300px;
+            padding: 20px;
+        }
+    }
 }

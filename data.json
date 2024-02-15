@@ -83,22 +83,22 @@
       "type": {
         "pending": [
           {
-            "first_name": "jhjfs",
-            "last_name": "jhjfs",
-            "email": "jhjfs",
-            "message": "ruewgrug"
+            "first_name": "Anna",
+            "last_name": "Wattson",
+            "email": "anna@gmail,com",
+            "message": "hello doctor"
           },
           {
-            "first_name": "jhjfs",
-            "last_name": "jhjfs",
-            "email": "jhjfs",
-            "message": "ruewgrug"
+            "first_name": "Lanna",
+            "last_name": "Wattson",
+            "email": "lanna@gmail.com",
+            "message": "hello doctor"
           },
           {
-            "first_name": "jhjfs",
-            "last_name": "jhjfs",
-            "email": "jhjfs",
-            "message": "ruewgrug"
+            "first_name": "Lara",
+            "last_name": "Houston",
+            "email": "lara@gmail.com",
+            "message": "hello doctor"
           }
         ],
         "accepted": []
@@ -114,13 +114,26 @@
       "type": {
         "pending": [
           {
-            "first_name": "jhjfs",
-            "last_name": "jhjfs",
-            "email": "jdfshjfs",
-            "message": "ruewgrug"
+            "first_name": "Anna",
+            "last_name": "Wattson",
+            "email": "anna@gmail,com",
+            "message": "hello doctor"
+          },
+          {
+            "first_name": "Lanna",
+            "last_name": "Wattson",
+            "email": "lanna@gmail.com",
+            "message": "hello doctor"
           }
         ],
-        "accepted": []
+        "accepted": [
+          {
+            "first_name": "Lara",
+            "last_name": "Houston",
+            "email": "lara@gmail.com",
+            "message": "hello doctor"
+          }
+        ]
       },
       "id": 1
     }
@@ -130,105 +143,49 @@
       "id": 1,
       "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c-5NQGMQB.jpg",
       "name": "Dr.James Samuels",
-      "pese": "Pediatrics",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
+      "pese": "Pediatrics"
     },
     {
       "id": 2,
       "image": "./assets/image/portrait-of-young-woman-doctor-at-hospital-corrido2-F8RCC4T.jpg",
       "name": "Dr. Lanna Wattson",
-      "pese": "Psychiatry",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
+      "pese": "Psychiatry"
     },
     {
       "id": 3,
       "image": "./assets/image/portrait-of-happy-doctor-at-hospital-corridor2-CX3VSGM.jpg",
       "name": "Dr.Martin Franses",
-      "pese": "Cardiology",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
+      "pese": "Cardiology"
     },
     {
       "id": 4,
       "image": "./assets/image/portrait-of-female-doctor-or-nurse-standing-in-hos-J37Z55D.jpg",
       "name": "Dr.Lara Houston",
-      "pese": "Orthopedics",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
+      "pese": "Orthopedics"
     },
     {
       "id": 5,
       "image": "./assets/image/portrait-of-young-woman-doctor-with-rescuers-in-ba2-FLP5ZUQ (1).jpg",
       "name": "Dr. Lucy Wildes",
-      "pese": "Pediatrics",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
+      "pese": "Pediatrics"
     },
     {
       "id": 6,
       "image": "./assets/image/group-of-doctors-on-conference-medical-team-sitti-HHUBV78.jpg",
       "name": "Dr.Amanda Sherman",
-      "pese": "Psychiatry",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
+      "pese": "Psychiatry"
     },
     {
       "id": 7,
       "image": "./assets/image/group-of-doctors-standing-in-corridor-on-medical-c2-5NQGMQB.jpg",
       "name": "Dr.Pepper Hills",
-      "pese": "Cardiology",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
+      "pese": "Cardiology"
     },
     {
       "id": 8,
       "image": "./assets/image/senior-doctor-with-smartwatch-in-office-P6PMM7R.jpg",
       "name": "Dr.John Lawson",
-      "pese": "Orthopedics",
-      "type": [
-        {
-          "pending": [],
-          "accepted": []
-        }
-      ]
-    },
-    {
-      "first_name": "yusura",
-      "email": "yusura@gmail.com",
-      "password": "067234632",
-      "pending": [],
-      "accepted": [],
-      "id": 9
+      "pese": "Orthopedics"
     }
   ],
   "detail": [

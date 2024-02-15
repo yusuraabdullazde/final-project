@@ -16,6 +16,7 @@
             .about-img,
             .about-video {
                 width: 260px;
+                max-width: 260px;
                 height: 500px;
 
             }
@@ -54,8 +55,8 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 30px;
-              
-                .close-btn{
+
+                .close-btn {
                     position: absolute;
                     top: 10px;
                     right: 10px;
@@ -94,7 +95,6 @@
             .txt {
                 display: flex;
                 justify-content: flex-start;
-                align-items: center;
                 gap: 20px;
 
                 div {
@@ -120,7 +120,8 @@
         }
     }
 }
-.modal{
+
+.modal {
     position: relative;
     width: 100%;
     display: flex;
@@ -130,7 +131,8 @@
     top: 0;
     left: 0;
     background-color: hsl(0, 0%, 0%, 0.6);
-    .bi-x-lg{
+
+    .bi-x-lg {
         position: absolute;
         right: 20px;
         font-size: 30px;
@@ -138,6 +140,7 @@
         top: 20px;
     }
 }
+
 @media screen and (max-width:1200px) {
     #about {
         .about {
@@ -173,7 +176,6 @@
             flex-direction: column;
 
             .img-video {
-
                 .about-img,
                 .about-video {
                     width: 300px;
@@ -191,15 +193,17 @@
     #about {
         .about {
             .img-video {
-               flex-direction: column;
+                flex-direction: column;
+
                 .about-img,
                 .about-video {
-                    width: 280px;
-                    height: 300px;
+                    max-width:530px;
+                    height: 400px;
                 }
             }
-            .about-text{
-                .txt{
+
+            .about-text {
+                .txt {
                     flex-direction: column;
                 }
             }

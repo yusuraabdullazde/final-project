@@ -19,12 +19,12 @@ signup.addEventListener("click", () => {
             type: type
         })
             .then(res => console.log(res.data))
+            window.location.reload()
 
     } else {
-        alert("bosdu")
+        alert("Qeydiyyatdan kecmək üçün məlumatları tam doldurun!")
     }
 });
-// let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null;
 
 signin.addEventListener("click", (e) => {
     e.preventDefault()
@@ -39,13 +39,35 @@ signin.addEventListener("click", (e) => {
             if (currentUserInfo) {
                 if (currentUserInfo.password == loginpassword) {
                     axios.post("http://localhost:3000/myaccount", currentUserInfo)
-                    // localStorage.setItem('currentUser', JSON.stringify(currentUserInfo));
-                    // window.location = './adminpanel.html'
+                    window.location = './adminpanel.html'
                 } else {
                     alert("no pasword")
                 }
             } else {
-                alert("no name")
+                alert("Daxil olmaq üçün məlumatları tam doldurun və ya qeydiyyatdan keçin!")
+                window.location.reload()
             }
         })
 })
+
+const icon=document.querySelector("#eyeSlash")
+const icon2=document.querySelector("#eyeSlash2")
+function myfuncone(){
+    const x=document.querySelector(".spassword")
+    icon.classList.toggle("bi-eye")
+    if(x.type==="password"){
+        x.type="text"
+    }else{
+        x.type="password"
+    }
+}
+
+function myfunctwo(){
+    const y=document.querySelector(".lpassword")
+    icon2.classList.toggle("bi-eye")
+    if(y.type==="password"){
+        y.type="text"
+    }else{
+        y.type="password"
+    }
+}

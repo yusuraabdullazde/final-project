@@ -15,10 +15,8 @@
         <div class="images">
             <img src="./assets/image/logo_Asset-1-1.png" alt="">
         </div>
-        <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> Dashboard</a>
-        <a href="#" class="icon-a"><i class="fa fa-users icons"></i> Customers</a>
-        <a href="#" class="icon-a"><i class="fa fa-list icons"></i> Projects</a>
-        <a href="#" class="icon-a"><i class="fa fa-user icons"></i> Accounts</a>
+        <a href="./adminpanel.html" class="icon-a"><i class="fa fa-dashboard icons"></i> Dashboard</a>
+        <a href="./account.html" class="icon-a"><i class="fa fa-user icons"></i> Admin</a>
 
     </div>
     <div id="main">
@@ -43,7 +41,7 @@
 
         <div class="col-div-3">
             <div class="box">
-                <p class="count">0 <br /><span>Customers</span></p>
+                <p class="count">0 <br /><span>Admin</span></p>
                 <i class="fa fa-users box-icon"></i>
             </div>
         </div>
@@ -55,10 +53,10 @@
         </div>
         <div class="clearfix"></div>
         <br /><br />
-        <div class="col-div-12">
+        <div class="col-div-12" id="scroll">
             <div class="box-8">
                 <div class="content-box">
-                    <p>ALL ACCOUNTS <span>Sell All</span></p>
+                    <p>ALL ACCOUNTS</p>
                     <br />
                     <table>
                         <tr>
@@ -68,15 +66,15 @@
                             <th>Email:</th>
                             <th>Cancel:</th>
                             <th>Add:</th>
-                            <th>
-                                Edit:
-                                Delete:
-                            </th>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
+
+
+    </div>
+    </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -102,22 +100,26 @@
             $(".nav").css('display', 'block');
             $(".nav2").css('display', 'none');
         });
+
+        const scrollelem = document.getElementById("scroll")
+        let x = scrollelem.scrollHeight;
+
         const firstname = document.querySelector(".firstname")
         const lastname = document.querySelector(".lastname")
         const email = document.querySelector(".email")
         const message = document.querySelector(".message")
         const table = document.querySelector("table")
         const profile = document.querySelector(".profile p")
+        const cancel = document.querySelector(".cancel")
+        const addbtn = document.querySelector(".add")
 
         let say = 0;
         fetch("http://localhost:3000/myaccount")
-
             .then(res => res.json())
             .then(data => {
                 say++
                 profile.innerText = data[0].first_name
-                count.innerHTML = `${data[0].type.pending.length}<br><span>Customers</span>`
-                console.log(data[0].type.pending);
+                count.innerHTML = `${data[0].type.pending.length}<br><span>All Accounts</span>`
                 y = data[0].type.pending
                 data[0].type.pending.forEach(element => {
                     table.innerHTML += `
@@ -127,54 +129,66 @@
         <td >${element.last_name}</td>
         <td class='salam salam${say}'> ${element.email}</td>
         <td>
-            <button onclick="cancel(${say})">Cancel</button>
+            <button onclick="deletefunk(${say})" class="cancel">Cancel</button>
         </td>
         <td>
-            <button onclick="add(${say})">Add</button>
+            <button onclick="add(${say})" class="add">Add</button>
         </td>
-        <td>
-            <i class="bi bi-pencil-fill" onclick="updatefunc(${say})"></i>
-            <i class="bi bi-trash3-fill" onclick="deletefunk(${say})"></i>
-        </td>
+      
     </tr>`
                 })
-
-
             })
+
+        function add(id) {
+            const salam = document.querySelector(`.salam${id}`)
+            console.log(salam);
+            axios.get(`http://localhost:3000/myaccount/`)
+                .then(res => res.data)
+                .then(data => {
+                    const pendingIndex = data[0].type.pending.findIndex((item) => item.email === salam.innerText)
+                    console.log(pendingIndex);
+                    if (pendingIndex !== -1) {
+                        const deletedItem = data[0].type.pending.splice(pendingIndex, 1)[0]
+                        data[0].type.accepted.push(deletedItem)
+                        axios.patch('http://localhost:3000/myaccount/' + data[0].id, { type: data[0].type })
+                            .then(() => {
+                                console.log("data updated");
+                                window.location.reload()
+                            })
+                            .catch(error => console.error("error updating data:", error))
+                    }
+                })
+                .catch(error => console.error("Error fetching data:", error))
+        }
         function deletefunk(id) {
             const salam = document.querySelector(`.salam${id}`)
             console.log(salam);
             axios.get(`http://localhost:3000/myaccount/`)
                 .then(res => res.data)
                 .then(data => {
-                    // x = .forEach(data => {
-                    // salam.forEach(s => {
-                        const id = data[0].type.pending.find((f) => f.email == salam.innerText)
-                        if (id) {
-                            console.log(id);
-                            console.log("dfsdfg");
-                            boyuktype=data[0].type.accepted
-                            index = data[0].type.pending.indexOf(id)
-                            console.log(index);
-                            if(index!=0){
-                                teze1=data[0].type.pending.slice(0,index)
-                                teze2= data[0].type.pending.slice(index+1)
-                                teze= teze1.concat(teze2)
-                                console.log(teze, data[0].type.pending.slice(0,index));
-
-                                
-                            }else{
-                               teze=data[0].type.pending.slice(index) 
-                            }
-                            axios.patch(`http://localhost:3000/myaccount/`+ data[0].id, {type :{
-                                    pending:teze,
-                                    accepted:boyuktype
-                                }})
-                                window.location.reload()
+                    const id = data[0].type.pending.find((f) => f.email == salam.innerText)
+                    if (id) {
+                        console.log(id);
+                        boyuktype = data[0].type.accepted
+                        index = data[0].type.pending.indexOf(id)
+                        if (index != 0) {
+                            teze1 = data[0].type.pending.slice(0, index)
+                            teze2 = data[0].type.pending.slice(index + 1)
+                            teze = teze1.concat(teze2)
+                            console.log(teze, data[0].type.pending.slice(0, index));
+                        } else {
+                            teze = data[0].type.pending.slice(index)
                         }
-                    })
+                        axios.patch(`http://localhost:3000/myaccount/` + data[0].id, {
+                            type: {
+                                pending: teze,
+                                accepted: boyuktype
+                            }
+                        })
+                        window.location.reload()
+                    }
+                })
         }
-
 
         function updatefunc(id) {
             event.preventDefault()
@@ -184,11 +198,9 @@
            <div class="form">
                <div class="form-content">
                   <label for="name1">First-Name:</label>
-                  <input type="text" class="firstname" value="new first-name" required> 
-                  <label for="name1">Last-Name:</label>
-                  <input type="text" class="lastname" required>
+                  <input type="text" class="firstname"value="new name" required> 
                   <label for="name1">Email:</label>
-                  <input type="text" class="email" required>
+                  <input type="text" class="email" value="new email" required>
                   <button class="save">SAVE</button>
                   <button class="closebtn">CLOSE</button>
                </div>
@@ -230,7 +242,6 @@
         }
 
         const count = document.querySelector(".count")
-        // document.write(localStorage.setItem("first_name"))
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

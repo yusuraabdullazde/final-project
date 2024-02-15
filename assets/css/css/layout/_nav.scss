@@ -106,11 +106,6 @@ nav {
                         }
                     }
                 }
-
-                a.active {
-                    color: black;
-                }
-
             }
 
         }
@@ -141,16 +136,18 @@ nav {
                 }
             }
 
-            .button {
+            .loginbtn {
                 padding: 10px 18px;
                 color: white;
-                background-color: $color1;
-                border-radius: 25px;
+                background-color: white;
+                border: 2px solid $color1;
+                color: $color1;
 
                 &:hover {
                     transition: all 1s ease;
-                    overflow: hidden;
-                    scale: 1.1;
+                    background-color: $color1;
+                    border: 2px solid white;
+                    color: white;
                 }
             }
         }
@@ -197,6 +194,16 @@ nav {
                     a {
                         color: white;
                         font-size: 18px;
+                    }
+                }
+
+                #down {
+                    .down {
+                        left: 140px;
+                        li a{
+                            color: black;
+
+                        }
                     }
                 }
 
